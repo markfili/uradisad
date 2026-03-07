@@ -1,0 +1,21 @@
+# URL -> Screenshot Mapping
+# Generated on Wed Apr 16 16:08:19 CEST 2025
+-----------------------------------
+https://gong.hr/ -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/ab15c33bd522a990dd2ee9fc45c3eb2e.jpg
+https://popravi.to/ -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/a229b50042c20ad2ed6e86bdff29193e.jpg
+https://pmpc.hr/ -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/428611a9d1e9c20936d71d7527ce24f7.jpg
+https://codeforcroatia.org/ -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/6fb972c98dcc77893170a3739f8c6afd.jpg
+https://lookerstudio.google.com/u/0/reporting/cab3e2df-5406-4b30-aa84-244d60361a88/page/ssaoD -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/d491788ce13fefac5e6d575ef49b4505.jpg
+https://docs.google.com/spreadsheets/d/1wo_D2bJji_Sbq_tmuvOIlzbSst7Mbl5_TjoB769xVLI/edit?gid=0 -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/b08aaa6cc8300ceb5a519c824df543a8.jpg
+https://parlametar.hr/ -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/407893c34c9ce1ee8ddbe3a7aa469ffa.jpg
+https://izbornisimulator.azurewebsites.net/ -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/b6d3f5a066ea5b180c54d4ae7d5d95ea.jpg
+https://smart.zagreb.hr/ -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/a7a1eeff922bc0de480f65909342f6f5.jpg
+https://geoportal.zagreb.hr/ -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/493ee7b98d3d6afcf7c642c0b19c83f4.jpg
+https://geohub-zagreb.hub.arcgis.com/ -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/18dd8a7ea4326d24dc2c424ff257a3b5.jpg
+https://zagreb.gdi.net/zg3d/ -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/83b5e916bf953aaea847819f64a57d88.jpg
+https://data.gov.hr/ -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/0630cc6390273f1bde9fc0277e43b055.jpg
+https://www.mozaikveza.hr/ -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/7771d2a92548a3ab4f7b9af8e7b39415.jpg
+https://slobodnadomena.hr/ -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/42d686d651a26dfe8a1805eee8efa832.jpg
+https://www.zelena-akcija.hr/hr -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/37885d6e8557ea65e5e11405e0627f57.jpg
+https://zelena-akcija.hr/hr/vijesti/predstavljena-nova-aplikacija-pametni-zeleni-telefon -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/84312bf1e9406b5089b20c0acdf8af7f.jpg
+https://zet-info.com/ -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/1327690b2765f2f44ef406fbfba97e0b.jpg

@@ -1,0 +1,146 @@
+[
+  {
+    "url": "https://gong.hr/",
+    "title": "Gong",
+    "description": "Gong je nestranačka udruga građana utemeljena 1997. radi poticanja građana na aktivnije sudjelovanje u političkim procesima.",
+    "image": "ab15c33bd522a990dd2ee9fc45c3eb2e.jpg",
+    "image_og": "https://gong.hr/wp-content/uploads/2022/10/vizual-3_IG-post-2.jpg",
+    "site_name": "Gong"
+  },
+  {
+    "url": "https://popravi.to/",
+    "title": "Popravi.to",
+    "description": "Report, view, and discuss local street-related problems.",
+    "image": "a229b50042c20ad2ed6e86bdff29193e.jpg",
+    "image_og": "https://popravi.to/cobrands/fixmystreet/images/fms-og_image.jpg",
+    "site_name": "Popravi.to"
+  },
+  {
+    "url": "https://pmpc.hr/",
+    "title": "Public Money Public Code",
+    "description": "Inicijativa FSFE, promovirana od strane HrOpen u Hrvatskoj",
+    "image": "428611a9d1e9c20936d71d7527ce24f7.jpg",
+    "image_og": "",
+    "site_name": "Public Money Public Code"
+  },
+  {
+    "url": "https://codeforcroatia.org/",
+    "title": "Code for Croatia",
+    "description": "Otvoreni diskurs o otvorenim stvarima - #opendata, #opengov, #opensource, #otvorenipodaci, #otvorenavlada, #otvorenikod, #DIY, #hakeri, #haktivisti. Pridruži se globalnom pokretu dizajnera, programera i haktivista koji stvaraju pozitivne društvene promjene!",
+    "image": "6fb972c98dcc77893170a3739f8c6afd.jpg",
+    "image_og": "https://codeforcroatia.org/uploads/default/original/1X/4c096930da7588fe0ab3110ce38fadcd3fe95987.png",
+    "site_name": "Code for Croatia"
+  },
+  {
+    "url": "https://lookerstudio.google.com/u/0/reporting/cab3e2df-5406-4b30-aa84-244d60361a88/page/ssaoD",
+    "title": "Praćenje provedbe_lokalni 2025",
+    "description": "Looker Studio turns your data into informative dashboards and reports that are easy to read, easy to share, and fully customizable.",
+    "image": "d491788ce13fefac5e6d575ef49b4505.jpg",
+    "image_og": "http://lookerstudio.google.com/reporting/cab3e2df-5406-4b30-aa84-244d60361a88/page/ssaoD/thumbnail?sz=full&feature=opengraph",
+    "site_name": "Looker Studio"
+  },
+  {
+    "url": "https://docs.google.com/spreadsheets/d/1wo_D2bJji_Sbq_tmuvOIlzbSst7Mbl5_TjoB769xVLI/edit?gid=0",
+    "title": "Pracenje provedbe predizbornih obecanja - OPEN DATASET - v1.1",
+    "description": "",
+    "image": "b08aaa6cc8300ceb5a519c824df543a8.jpg",
+    "image_og": "https://lh7-us.googleusercontent.com/docs/AHkbwyJfdsy5Ac19j4PUPNXSK2RQVBYJriDZ0nUh_acEC2wn4Vma3XK4M-FBVnwb-rOORzxISOtCm0Nw-WzLIv8w3OREnpj-bPBktydqNYy0od8fSF7sgqrB=w1200-h630-p",
+    "site_name": "Google Docs"
+  },
+  {
+    "url": "https://parlametar.hr/",
+    "title": "Parlametar",
+    "description": "Parlametar je alat koji, pomoću analize glasanja i transkripata zastupničkih nastupa, olakšava praćenje rada Hrvatskog sabora.",
+    "image": "407893c34c9ce1ee8ddbe3a7aa469ffa.jpg",
+    "image_og": "https://cdn.10.parlametar.hr/img/OG.png",
+    "site_name": ""
+  },
+  {
+    "url": "https://izbornisimulator.azurewebsites.net/",
+    "title": "CroElectionSimulator",
+    "description": "",
+    "image": "b6d3f5a066ea5b180c54d4ae7d5d95ea.jpg",
+    "image_og": "",
+    "site_name": ""
+  },
+  {
+    "url": "https://smart.zagreb.hr/",
+    "title": "Zagreb Smart City",
+    "description": "Smart City HUB-a Grada Zagreba premošćuje jaz između različitih platformi, formata podataka i kanala komunikacije te omogućuje bolju povezanost s podružnicama, ustanovama i trgovačkim društvima kojima je osnivač Grad Zagreb.",
+    "image": "a7a1eeff922bc0de480f65909342f6f5.jpg",
+    "image_og": "https://www.arcgis.com/sharing/rest/content/items/990a3b51cb20450d923b8996c5567308/resources/grb.png",
+    "site_name": ""
+  },
+  {
+    "url": "https://geoportal.zagreb.hr/",
+    "title": "",
+    "description": "",
+    "image": "493ee7b98d3d6afcf7c642c0b19c83f4.jpg",
+    "image_og": "",
+    "site_name": ""
+  },
+  {
+    "url": "https://geohub-zagreb.hub.arcgis.com/",
+    "title": "GeoHub Zagreb",
+    "description": "Portal za objavu, pregled i preuzimanje prostornih podataka.",
+    "image": "18dd8a7ea4326d24dc2c424ff257a3b5.jpg",
+    "image_og": "https://www.arcgis.com/sharing/rest/content/items/b6bb6b41d3f84cebb43b5d3884d172a8/info/thumbnail/thumbnail1662025492036.png?w=500",
+    "site_name": ""
+  },
+  {
+    "url": "https://zagreb.gdi.net/zg3d/",
+    "title": "GDi Ensemble Smart Portal 3D",
+    "description": "",
+    "image": "83b5e916bf953aaea847819f64a57d88.jpg",
+    "image_og": "",
+    "site_name": ""
+  },
+  {
+    "url": "https://data.gov.hr/",
+    "title": "Portal otvorenih podataka",
+    "description": "",
+    "image": "0630cc6390273f1bde9fc0277e43b055.jpg",
+    "image_og": "",
+    "site_name": ""
+  },
+  {
+    "url": "https://www.mozaikveza.hr/",
+    "title": "Mozaik veza",
+    "description": "Mozaik veza je alat koji omogućuje istraživačkim novinarima, aktivistima i zainteresiranoj javnosti istraživanje međusobnih veza politički izloženih osoba, kao i veza s drugim pravnim i fizički osobama, na temelju podataka preuzetih iz registara i baza javnih tijela.",
+    "image": "7771d2a92548a3ab4f7b9af8e7b39415.jpg",
+    "image_og": "",
+    "site_name": ""
+  },
+  {
+    "url": "https://slobodnadomena.hr/",
+    "title": "Slobodna domena Zadruga za otvoreni kod i dizajn",
+    "description": "",
+    "image": "42d686d651a26dfe8a1805eee8efa832.jpg",
+    "image_og": "",
+    "site_name": ""
+  },
+  {
+    "url": "https://www.zelena-akcija.hr/hr",
+    "title": "",
+    "description": "",
+    "image": "37885d6e8557ea65e5e11405e0627f57.jpg",
+    "image_og": "",
+    "site_name": ""
+  },
+  {
+    "url": "https://zelena-akcija.hr/hr/vijesti/predstavljena-nova-aplikacija-pametni-zeleni-telefon",
+    "title": "",
+    "description": "",
+    "image": "84312bf1e9406b5089b20c0acdf8af7f.jpg",
+    "image_og": "",
+    "site_name": ""
+  },
+  {
+    "url": "https://zet-info.com/",
+    "title": "ZET info",
+    "description": "ZET info",
+    "image": "1327690b2765f2f44ef406fbfba97e0b.jpg",
+    "image_og": "",
+    "site_name": ""
+  }
+]
