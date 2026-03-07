@@ -903,5 +903,48 @@
     "type": "tool",
     "language": "en",
     "region": "eu"
+  },
+  {
+    "url": "https://znanostuprolazu.com.hr/",
+    "title": "Znanost u prolazu",
+    "description": "Inicijativa za promociju žena u znanosti koja ističe i podržava doprinos žena u znanstvenim područjima kroz javne događaje i komunikaciju.",
+    "image": "78a2e0353e53ca513749367343ffb680.jpg",
+    "image_og": "",
+    "site_name": "",
+    "categories": [
+      "public_education",
+      "grassroots",
+      "minority_rights"
+    ],
+    "by": {
+      "name": "Znanost u prolazu",
+      "url": "https://znanostuprolazu.com.hr/"
+    },
+    "socials": null,
+    "group": null,
+    "type": "organization",
+    "language": "hr",
+    "region": "croatia"
+  },
+  {
+    "url": "https://udruga-penkala.hr/",
+    "title": "Udruga Penkala",
+    "description": "Udruga za popularizaciju znanosti koja djeluje kao spona između znanstvene zajednice i šire javnosti kroz interaktivne projekte i edukativne aktivnosti.",
+    "image": "6548967b4367f092d0888dc0e58b6b25.jpg",
+    "image_og": "",
+    "site_name": "",
+    "categories": [
+      "public_education",
+      "grassroots"
+    ],
+    "by": {
+      "name": "Udruga Penkala – Znanstvena spajalica",
+      "url": "https://udruga-penkala.hr/"
+    },
+    "socials": null,
+    "group": null,
+    "type": "organization",
+    "language": "hr",
+    "region": "croatia"
   }
 ]

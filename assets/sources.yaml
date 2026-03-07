@@ -593,3 +593,32 @@ sources:
       - information
       - open_data
       - policy
+
+  # --- Znanost & obrazovanje ---
+
+  - title: Znanost u prolazu
+    url: https://znanostuprolazu.com.hr/
+    by:
+      name: Znanost u prolazu
+      url: https://znanostuprolazu.com.hr/
+    description: Inicijativa za promociju žena u znanosti koja ističe i podržava doprinos žena u znanstvenim područjima kroz javne događaje i komunikaciju.
+    type: organization
+    language: hr
+    region: croatia
+    categories:
+      - public_education
+      - grassroots
+      - minority_rights
+
+  - title: Udruga Penkala
+    url: https://udruga-penkala.hr/
+    by:
+      name: Udruga Penkala – Znanstvena spajalica
+      url: https://udruga-penkala.hr/
+    description: Udruga za popularizaciju znanosti koja djeluje kao spona između znanstvene zajednice i šire javnosti kroz interaktivne projekte i edukativne aktivnosti.
+    type: organization
+    language: hr
+    region: croatia
+    categories:
+      - public_education
+      - grassroots

@@ -1,5 +1,5 @@
 # URL -> Screenshot Mapping
-# Generated on Sat Mar  7 16:24:15 CET 2026
+# Generated on Sat Mar  7 23:13:24 CET 2026
 -----------------------------------
 http://dei.srce.hr/ -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/978588198d74797faa98acc89e1d8947.jpg
 https://arhium.hr/ -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/d86f905956b8adcd36ab8c5a642f0207.jpg
@@ -28,6 +28,7 @@ https://popravi.to/ -> /Users/marko/Development/flutter/projects/aktivizam/asset
 https://sindikatbiciklista.hr/ -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/1b53c41038d4c490366993cf4cb69223.jpg
 https://slobodnadomena.hr/ -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/42d686d651a26dfe8a1805eee8efa832.jpg
 https://smart.zagreb.hr/ -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/a7a1eeff922bc0de480f65909342f6f5.jpg
+https://udruga-penkala.hr/ -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/6548967b4367f092d0888dc0e58b6b25.jpg
 https://usporedicijene.info/ -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/7532eb9e617695741d91c310ea18e18e.jpg
 https://www.cms.hr/ -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/8b7a1be6bac29a9101bcf353ae9c81a4.jpg
 https://www.detektorimovine.hr/ -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/5c51ea324ea7ad4828baae5f6058280c.jpg
@@ -43,3 +44,4 @@ https://www.zelena-akcija.hr/hr -> /Users/marko/Development/flutter/projects/akt
 https://zagreb.gdi.net/zg3d/ -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/83b5e916bf953aaea847819f64a57d88.jpg
 https://zelena-akcija.hr/hr/vijesti/predstavljena-nova-aplikacija-pametni-zeleni-telefon -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/84312bf1e9406b5089b20c0acdf8af7f.jpg
 https://zet-info.com/ -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/1327690b2765f2f44ef406fbfba97e0b.jpg
+https://znanostuprolazu.com.hr/ -> /Users/marko/Development/flutter/projects/aktivizam/assets/screenshots/78a2e0353e53ca513749367343ffb680.jpg
