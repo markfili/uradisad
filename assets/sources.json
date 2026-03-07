@@ -1,164 +1,907 @@
 [
   {
     "url": "https://gong.hr/",
-    "title": "Gong",
-    "description": "Gong je nestranačka udruga građana utemeljena 1997. radi poticanja građana na aktivnije sudjelovanje u političkim procesima.",
+    "title": "GONG",
+    "description": "Nestranačka udruga građana koja potiče aktivnije sudjelovanje u demokratskim procesima, prati izbore i bori se protiv korupcije.",
     "image": "ab15c33bd522a990dd2ee9fc45c3eb2e.jpg",
     "image_og": "https://gong.hr/wp-content/uploads/2022/10/vizual-3_IG-post-2.jpg",
     "site_name": "Gong",
-    "categories":["protest_art", "documentary"]
+    "categories": [
+      "public_education",
+      "media_advocacy",
+      "voting",
+      "lobbying"
+    ],
+    "by": {
+      "name": "GONG - Građani organizirano nadgledaju glasanje",
+      "url": "https://gong.hr/"
+    },
+    "socials": null,
+    "group": null,
+    "type": "organization",
+    "language": "hr",
+    "region": "croatia"
   },
   {
-    "url": "https://popravi.to/",
-    "title": "Popravi.to",
-    "description": "Report, view, and discuss local street-related problems.",
-    "image": "a229b50042c20ad2ed6e86bdff29193e.jpg",
-    "image_og": "https://popravi.to/cobrands/fixmystreet/images/fms-og_image.jpg",
-    "site_name": "Popravi.to",
-    "categories": ["protest_art", "documentary"]
+    "url": "https://imamopravoznati.org/",
+    "title": "Imamo Pravo Znati",
+    "description": "Platforma za slanje zahtjeva za pristup informacijama javnim tijelima u Hrvatskoj, temeljena na WhatDoTheyKnow.",
+    "image": "349cf3d450c3d131ecb422d0e85381aa.jpg",
+    "image_og": "https://imamopravoznati.org/assets/logo-opengraph-7364e4f88fa3b9c60585896328afc549e121122d9e60b50dae573856772700f1.png",
+    "site_name": "Imamo pravo znati",
+    "categories": [
+      "information",
+      "open_data",
+      "civil_liberties"
+    ],
+    "by": {
+      "name": "mySociety / lokalna adaptacija",
+      "url": "https://www.mysociety.org/"
+    },
+    "socials": null,
+    "group": null,
+    "type": "tool",
+    "language": "hr",
+    "region": "croatia"
   },
   {
-    "url": "https://pmpc.hr/",
-    "title": "Public Money Public Code",
-    "description": "Inicijativa FSFE, promovirana od strane HrOpen u Hrvatskoj",
-    "image": "428611a9d1e9c20936d71d7527ce24f7.jpg",
+    "url": "https://www.mozaikveza.hr/",
+    "title": "Mozaik Veza",
+    "description": "Alat za istraživanje međusobnih veza politički izloženih osoba s pravnim i fizičkim osobama, temeljen na javnim registrima.",
+    "image": "7771d2a92548a3ab4f7b9af8e7b39415.jpg",
     "image_og": "",
-    "site_name": "Public Money Public Code",
-    "categories": ["protest_art", "documentary"]
+    "site_name": "",
+    "categories": [
+      "information",
+      "open_data",
+      "media_advocacy"
+    ],
+    "by": {
+      "name": "GONG",
+      "url": "https://gong.hr/"
+    },
+    "socials": null,
+    "group": null,
+    "type": "tool",
+    "language": "hr",
+    "region": "croatia"
   },
   {
-    "url": "https://codeforcroatia.org/",
-    "title": "Code for Croatia",
-    "description": "Otvoreni diskurs o otvorenim stvarima - #opendata, #opengov, #opensource, #otvorenipodaci, #otvorenavlada, #otvorenikod, #DIY, #hakeri, #haktivisti. Pridruži se globalnom pokretu dizajnera, programera i haktivista koji stvaraju pozitivne društvene promjene!",
-    "image": "6fb972c98dcc77893170a3739f8c6afd.jpg",
-    "image_og": "https://codeforcroatia.org/uploads/default/original/1X/4c096930da7588fe0ab3110ce38fadcd3fe95987.png",
-    "site_name": "Code for Croatia",
-    "categories": ["protest_art", "documentary"]
+    "url": "https://www.detektorimovine.hr/",
+    "title": "Detektor imovine",
+    "description": "Baza podataka o imovini i prihodima hrvatskih dužnosnika i političara preuzeta iz službenih izvješća.",
+    "image": "5c51ea324ea7ad4828baae5f6058280c.jpg",
+    "image_og": "https://files.detektorimovine.hr/static/images/OG_hr.43b34db837e1.jpg",
+    "site_name": "",
+    "categories": [
+      "information",
+      "open_data",
+      "media_advocacy"
+    ],
+    "by": {
+      "name": "GONG",
+      "url": "https://gong.hr/"
+    },
+    "socials": null,
+    "group": null,
+    "type": "tool",
+    "language": "hr",
+    "region": "croatia"
   },
   {
-    "url": "https://lookerstudio.google.com/u/0/reporting/cab3e2df-5406-4b30-aa84-244d60361a88/page/ssaoD",
-    "title": "Praćenje provedbe_lokalni 2025",
-    "description": "Looker Studio turns your data into informative dashboards and reports that are easy to read, easy to share, and fully customizable.",
-    "image": "d491788ce13fefac5e6d575ef49b4505.jpg",
-    "image_og": "http://lookerstudio.google.com/reporting/cab3e2df-5406-4b30-aa84-244d60361a88/page/ssaoD/thumbnail?sz=full&feature=opengraph",
-    "site_name": "Looker Studio",
-    "categories": ["protest_art", "documentary"]
+    "url": "https://www.sukobinteresa.hr/",
+    "title": "Povjerenstvo za odlučivanje o sukobu interesa",
+    "description": "Službena stranica povjerenstva koje nadzire sukob interesa dužnosnika i vodi registar njihove imovine.",
+    "image": "a32635d0b84f664eeedf2427ce52f99d.jpg",
+    "image_og": "",
+    "site_name": "",
+    "categories": [
+      "information",
+      "open_data"
+    ],
+    "by": {
+      "name": "Republika Hrvatska",
+      "url": "https://gov.hr/"
+    },
+    "socials": null,
+    "group": null,
+    "type": "tool",
+    "language": "hr",
+    "region": "croatia"
   },
   {
-    "url": "https://docs.google.com/spreadsheets/d/1wo_D2bJji_Sbq_tmuvOIlzbSst7Mbl5_TjoB769xVLI/edit?gid=0",
-    "title": "Pracenje provedbe predizbornih obecanja - OPEN DATASET - v1.1",
-    "description": "",
-    "image": "b08aaa6cc8300ceb5a519c824df543a8.jpg",
-    "image_og": "https://lh7-us.googleusercontent.com/docs/AHkbwyJfdsy5Ac19j4PUPNXSK2RQVBYJriDZ0nUh_acEC2wn4Vma3XK4M-FBVnwb-rOORzxISOtCm0Nw-WzLIv8w3OREnpj-bPBktydqNYy0od8fSF7sgqrB=w1200-h630-p",
-    "site_name": "Google Docs",
-    "categories": ["protest_art", "documentary"]
+    "url": "https://www.kartografija-otpora.org/hr/",
+    "title": "Kartografija otpora",
+    "description": "Interaktivna karta koja dokumentira prosvjede, akcije i organizacije civilnog društva u Hrvatskoj i regiji.",
+    "image": "fb8f10026d390324a10ecebdb9706a0b.jpg",
+    "image_og": "http://www.kartografija-otpora.org/template/fb2.jpg",
+    "site_name": "Kartografija otpora",
+    "categories": [
+      "information",
+      "protests",
+      "social_media"
+    ],
+    "by": {
+      "name": "Kartografija otpora",
+      "url": "https://www.kartografija-otpora.org/"
+    },
+    "socials": null,
+    "group": null,
+    "type": "tool",
+    "language": "hr",
+    "region": "croatia"
+  },
+  {
+    "url": "https://www.maz.hr/",
+    "title": "Mreža Antifašistkinja Zagreb",
+    "description": "Feministička i antifašistička organizacija koja se bori za rodnu ravnopravnost, prava žena i antidiskriminaciju.",
+    "image": "10b6d37ff028754fa4d3a90a92b73c84.jpg",
+    "image_og": "",
+    "site_name": "MAZ",
+    "categories": [
+      "grassroots",
+      "coalition",
+      "public_education"
+    ],
+    "by": {
+      "name": "Mreža Antifašistkinja Zagreb",
+      "url": "https://www.maz.hr/"
+    },
+    "socials": {
+      "facebook": "https://web.facebook.com/antifamrezazg"
+    },
+    "group": null,
+    "type": "organization",
+    "language": "hr",
+    "region": "zagreb"
+  },
+  {
+    "url": "https://gong.hr/2026/02/24/prijavi-se-na-prvu-gongovu-skolu-za-lokalne-aktiviste-u-sibeniku/",
+    "title": "GONG školica za lokalne aktiviste u Šibeniku",
+    "description": "Edukativni program za građane koji žele naučiti kako se boriti protiv korupcije na lokalnoj razini i koristiti mehanizme građanskog nadzora.",
+    "image": "b17a6e64953e334d0afe4d650695af4c.jpg",
+    "image_og": "https://gong.hr/wp-content/uploads/2026/02/Antikorupcijska-skola.png",
+    "site_name": "Gong",
+    "categories": [
+      "public_education",
+      "grassroots",
+      "lobbying"
+    ],
+    "by": {
+      "name": "GONG",
+      "url": "https://gong.hr/"
+    },
+    "socials": null,
+    "group": null,
+    "type": "event",
+    "language": "hr",
+    "region": "croatia"
   },
   {
     "url": "https://parlametar.hr/",
     "title": "Parlametar",
-    "description": "Parlametar je alat koji, pomoću analize glasanja i transkripata zastupničkih nastupa, olakšava praćenje rada Hrvatskog sabora.",
+    "description": "Alat za praćenje rada Hrvatskog sabora kroz analizu glasanja, transkripata zastupničkih nastupa i statističke preglede.",
     "image": "407893c34c9ce1ee8ddbe3a7aa469ffa.jpg",
     "image_og": "https://cdn.10.parlametar.hr/img/OG.png",
     "site_name": "",
-    "categories": ["protest_art", "documentary"]
+    "categories": [
+      "information",
+      "open_data",
+      "media_advocacy"
+    ],
+    "by": {
+      "name": "Parlametar tim",
+      "url": "https://parlametar.hr/"
+    },
+    "socials": null,
+    "group": null,
+    "type": "tool",
+    "language": "hr",
+    "region": "croatia"
+  },
+  {
+    "url": "https://data.gov.hr/",
+    "title": "Državni Portal Otvorenih Podataka",
+    "description": "Središnji portal za objavu i preuzimanje otvorenih podataka javnih tijela Republike Hrvatske.",
+    "image": "0630cc6390273f1bde9fc0277e43b055.jpg",
+    "image_og": "",
+    "site_name": "",
+    "categories": [
+      "open_data",
+      "information"
+    ],
+    "by": {
+      "name": "Republika Hrvatska",
+      "url": "https://gov.hr/"
+    },
+    "socials": null,
+    "group": null,
+    "type": "dataset",
+    "language": "hr",
+    "region": "croatia"
+  },
+  {
+    "url": "https://lookerstudio.google.com/u/0/reporting/cab3e2df-5406-4b30-aa84-244d60361a88/page/ssaoD",
+    "title": "Praćenje provedbe predizbornih obećanja",
+    "description": "Vizualni pregled napretka u provedbi predizbornih obećanja stranaka na lokalnoj razini.",
+    "image": "d491788ce13fefac5e6d575ef49b4505.jpg",
+    "image_og": "http://lookerstudio.google.com/reporting/cab3e2df-5406-4b30-aa84-244d60361a88/page/ssaoD/thumbnail?sz=full&feature=opengraph",
+    "site_name": "Looker Studio",
+    "categories": [
+      "information",
+      "open_data",
+      "voting"
+    ],
+    "by": {
+      "name": "GONG",
+      "url": "https://gong.hr/"
+    },
+    "socials": null,
+    "group": "predizborna_obecanja",
+    "type": "tool",
+    "language": "hr",
+    "region": "croatia"
+  },
+  {
+    "url": "https://docs.google.com/spreadsheets/d/1wo_D2bJji_Sbq_tmuvOIlzbSst7Mbl5_TjoB769xVLI/edit?gid=0",
+    "title": "Praćenje provedbe predizbornih obećanja (dataset)",
+    "description": "Otvoreni skup podataka koji bilježi provedbu predizbornih obećanja, dostupan za preuzimanje i analizu.",
+    "image": "b08aaa6cc8300ceb5a519c824df543a8.jpg",
+    "image_og": "https://lh7-us.googleusercontent.com/docs/AHkbwyJfdsy5Ac19j4PUPNXSK2RQVBYJriDZ0nUh_acEC2wn4Vma3XK4M-FBVnwb-rOORzxISOtCm0Nw-WzLIv8w3OREnpj-bPBktydqNYy0od8fSF7sgqrB=w1200-h630-p",
+    "site_name": "Google Docs",
+    "categories": [
+      "open_data",
+      "information"
+    ],
+    "by": {
+      "name": "GONG",
+      "url": "https://gong.hr/"
+    },
+    "socials": null,
+    "group": "predizborna_obecanja",
+    "type": "dataset",
+    "language": "hr",
+    "region": "croatia"
   },
   {
     "url": "https://izbornisimulator.azurewebsites.net/",
-    "title": "CroElectionSimulator",
-    "description": "",
+    "title": "Izborni Simulator",
+    "description": "Simulator koji vizualizira kako bi se rasporedili zastupnički mandati pri različitim izbornim ishodima u Hrvatskom saboru.",
     "image": "b6d3f5a066ea5b180c54d4ae7d5d95ea.jpg",
     "image_og": "",
     "site_name": "",
-    "categories": ["protest_art", "documentary"]
+    "categories": [
+      "information",
+      "voting"
+    ],
+    "by": {
+      "name": "Nepoznat autor"
+    },
+    "socials": null,
+    "group": null,
+    "type": "tool",
+    "language": "hr",
+    "region": "croatia"
+  },
+  {
+    "url": "https://www.portal-ostro.hr/",
+    "title": "Portal Oštro",
+    "description": "Centar za istraživačko novinarstvo u jadranskoj regiji koji objavljuje dubinska istraživanja korupcije, kriminala i zlouporabe vlasti.",
+    "image": "0f36b7123185c1e7428b55aee5ca1e6d.jpg",
+    "image_og": "http://static1.squarespace.com/static/612e31dddf152b00b36fa792/t/612e34982215d32dd7530522/1630418073088/Ostro_SocialSharingLogo.png?format=1500w",
+    "site_name": "Oštro Hrvatska",
+    "categories": [
+      "media_advocacy",
+      "information",
+      "documentary"
+    ],
+    "by": {
+      "name": "Oštro - Centar za istraživačko novinarstvo",
+      "url": "https://www.portal-ostro.hr/"
+    },
+    "socials": null,
+    "group": null,
+    "type": "organization",
+    "language": "hr",
+    "region": "croatia"
+  },
+  {
+    "url": "https://pmpc.hr/",
+    "title": "Public Money Public Code",
+    "description": "Hrvatska kampanja inicijative Free Software Foundation Europe koja zagovara da javno financirani softver bude objavljen kao otvoreni kod.",
+    "image": "428611a9d1e9c20936d71d7527ce24f7.jpg",
+    "image_og": "",
+    "site_name": "Public Money Public Code",
+    "categories": [
+      "public_education",
+      "app_development",
+      "open_data"
+    ],
+    "by": {
+      "name": "HrOpen / FSFE",
+      "url": "https://fsfe.org/"
+    },
+    "socials": null,
+    "group": null,
+    "type": "organization",
+    "language": "hr",
+    "region": "croatia"
+  },
+  {
+    "url": "https://codeforcroatia.org/",
+    "title": "Code For Croatia",
+    "description": "Zajednica dizajnera, programera i haktivista koji stvaraju digitalne alate i rješenja za pozitivne društvene promjene u Hrvatskoj.",
+    "image": "6fb972c98dcc77893170a3739f8c6afd.jpg",
+    "image_og": "https://codeforcroatia.org/uploads/default/original/1X/4c096930da7588fe0ab3110ce38fadcd3fe95987.png",
+    "site_name": "Code for Croatia",
+    "categories": [
+      "app_development",
+      "open_data",
+      "grassroots"
+    ],
+    "by": {
+      "name": "Code For Croatia zajednica",
+      "url": "https://codeforcroatia.org/"
+    },
+    "socials": null,
+    "group": null,
+    "type": "organization",
+    "language": "hr",
+    "region": "croatia"
+  },
+  {
+    "url": "https://slobodnadomena.hr/",
+    "title": "Slobodna Domena",
+    "description": "Zadruga za otvoreni kod i dizajn koja razvija digitalna rješenja za organizacije civilnog društva i javni sektor.",
+    "image": "42d686d651a26dfe8a1805eee8efa832.jpg",
+    "image_og": "",
+    "site_name": "",
+    "categories": [
+      "app_development",
+      "open_data",
+      "cooperative"
+    ],
+    "by": {
+      "name": "Slobodna Domena zadruga",
+      "url": "https://slobodnadomena.hr/"
+    },
+    "socials": null,
+    "group": null,
+    "type": "organization",
+    "language": "hr",
+    "region": "croatia"
+  },
+  {
+    "url": "https://popravi.to/",
+    "title": "Popravi.to",
+    "description": "Platforma za prijavu i praćenje komunalnih problema na javnim površinama, temeljena na FixMyStreet platformi.",
+    "image": "a229b50042c20ad2ed6e86bdff29193e.jpg",
+    "image_og": "https://popravi.to/cobrands/fixmystreet/images/fms-og_image.jpg",
+    "site_name": "Popravi.to",
+    "categories": [
+      "grassroots",
+      "development",
+      "app_development"
+    ],
+    "by": {
+      "name": "mySociety / lokalna adaptacija",
+      "url": "https://www.mysociety.org/"
+    },
+    "socials": null,
+    "group": null,
+    "type": "tool",
+    "language": "hr",
+    "region": "croatia"
+  },
+  {
+    "url": "https://opencode.hr/",
+    "title": "OpenCode by SRCE",
+    "description": "Zajednička platforma za razmjenu otvorenog programskog koda akademske i znanstvene zajednice Republike Hrvatske.",
+    "image": "603ae1e9830ced9352b98c1a43ac10a5.jpg",
+    "image_og": "",
+    "site_name": "",
+    "categories": [
+      "app_development",
+      "open_data"
+    ],
+    "by": {
+      "name": "SRCE - Sveučilišni računski centar",
+      "url": "https://www.srce.unizg.hr/"
+    },
+    "socials": null,
+    "group": null,
+    "type": "tool",
+    "language": "hr",
+    "region": "croatia"
+  },
+  {
+    "url": "https://it-tool.opencode.hr/",
+    "title": "Handy tools for developers by SRCE",
+    "description": "Kolekcija korisnih web alata za programere dostupnih putem SRCE-ove OpenCode platforme.",
+    "image": "2311f7bb954ed7952e02a05739b781f4.jpg",
+    "image_og": "https://it-tools.tech/banner.png?v=2",
+    "site_name": "",
+    "categories": [
+      "app_development"
+    ],
+    "by": {
+      "name": "SRCE - Sveučilišni računski centar",
+      "url": "https://www.srce.unizg.hr/"
+    },
+    "socials": null,
+    "group": "srce",
+    "type": "tool",
+    "language": "hr",
+    "region": "croatia"
+  },
+  {
+    "url": "http://dei.srce.hr/",
+    "title": "Konferencija Dani e-infrastrukture 2026",
+    "description": "Godišnja konferencija e-infrastrukture, okupljalište korisničke zajednice Srca i entuzijasta za razvoj znanosti i visokog obrazovanja.",
+    "image": "978588198d74797faa98acc89e1d8947.jpg",
+    "image_og": "https://dei.srce.hr/sites/default/files/2025-05/DEI_web_2026_0.jpg",
+    "site_name": "",
+    "categories": [
+      "public_education",
+      "app_development"
+    ],
+    "by": {
+      "name": "SRCE - Sveučilišni računski centar",
+      "url": "https://www.srce.unizg.hr/"
+    },
+    "socials": null,
+    "group": "srce",
+    "type": "event",
+    "language": "hr",
+    "region": "croatia"
+  },
+  {
+    "url": "https://myth-code.com/",
+    "title": "Hoodica / Myth Code",
+    "description": "Sustav koji obavještava tvrtke da su ponude za upis u Poslovni registar opcionalne, borba protiv obmanjujućih poslovnih praksi.",
+    "image": "ea7f5cbde0767eb05b154a162d9dd47f.jpg",
+    "image_og": "",
+    "site_name": "",
+    "categories": [
+      "app_development",
+      "information"
+    ],
+    "by": {
+      "name": "Lada Kovjanić"
+    },
+    "socials": null,
+    "group": null,
+    "type": "tool",
+    "language": "hr",
+    "region": "croatia"
   },
   {
     "url": "https://smart.zagreb.hr/",
     "title": "Zagreb Smart City",
-    "description": "Smart City HUB-a Grada Zagreba premošćuje jaz između različitih platformi, formata podataka i kanala komunikacije te omogućuje bolju povezanost s podružnicama, ustanovama i trgovačkim društvima kojima je osnivač Grad Zagreb.",
+    "description": "Smart City HUB Grada Zagreba koji povezuje podatke i usluge gradskih platformi, ustanova i trgovačkih društava u vlasništvu Grada.",
     "image": "a7a1eeff922bc0de480f65909342f6f5.jpg",
     "image_og": "https://www.arcgis.com/sharing/rest/content/items/990a3b51cb20450d923b8996c5567308/resources/grb.png",
     "site_name": "",
-    "categories": ["protest_art", "documentary"]
+    "categories": [
+      "open_data",
+      "development"
+    ],
+    "by": {
+      "name": "Grad Zagreb",
+      "url": "https://www.zagreb.hr/"
+    },
+    "socials": null,
+    "group": "grad_zagreb",
+    "type": "tool",
+    "language": "hr",
+    "region": "zagreb"
   },
   {
     "url": "https://geoportal.zagreb.hr/",
-    "title": "",
-    "description": "",
+    "title": "Grad Zagreb Geoportal",
+    "description": "Geoportal Grada Zagreba s interaktivnim kartama, prostornim podacima i GIS alatima za pregled gradskog teritorija.",
     "image": "493ee7b98d3d6afcf7c642c0b19c83f4.jpg",
     "image_og": "",
     "site_name": "",
-    "categories": ["protest_art", "documentary"]
+    "categories": [
+      "open_data",
+      "information"
+    ],
+    "by": {
+      "name": "Grad Zagreb",
+      "url": "https://www.zagreb.hr/"
+    },
+    "socials": null,
+    "group": "grad_zagreb",
+    "type": "dataset",
+    "language": "hr",
+    "region": "zagreb"
   },
   {
     "url": "https://geohub-zagreb.hub.arcgis.com/",
     "title": "GeoHub Zagreb",
-    "description": "Portal za objavu, pregled i preuzimanje prostornih podataka.",
+    "description": "ArcGIS hub Grada Zagreba za objavu, pregled i preuzimanje prostornih podataka u otvorenom formatu.",
     "image": "18dd8a7ea4326d24dc2c424ff257a3b5.jpg",
     "image_og": "https://www.arcgis.com/sharing/rest/content/items/b6bb6b41d3f84cebb43b5d3884d172a8/info/thumbnail/thumbnail1662025492036.png?w=500",
     "site_name": "",
-    "categories": ["protest_art", "documentary"]
+    "categories": [
+      "open_data",
+      "information"
+    ],
+    "by": {
+      "name": "Grad Zagreb",
+      "url": "https://www.zagreb.hr/"
+    },
+    "socials": null,
+    "group": "grad_zagreb",
+    "type": "dataset",
+    "language": "hr",
+    "region": "zagreb"
   },
   {
     "url": "https://zagreb.gdi.net/zg3d/",
-    "title": "GDi Ensemble Smart Portal 3D",
-    "description": "",
+    "title": "Zagreb 3D Model",
+    "description": "Interaktivni 3D model Grada Zagreba koji prikazuje zgrade, infrastrukturu i prostorni razvoj grada.",
     "image": "83b5e916bf953aaea847819f64a57d88.jpg",
     "image_og": "",
     "site_name": "",
-    "categories": ["protest_art", "documentary"]
+    "categories": [
+      "open_data",
+      "information"
+    ],
+    "by": {
+      "name": "GDi / Grad Zagreb",
+      "url": "https://www.gdi.net/"
+    },
+    "socials": null,
+    "group": "grad_zagreb",
+    "type": "tool",
+    "language": "hr",
+    "region": "zagreb"
   },
   {
-    "url": "https://data.gov.hr/",
-    "title": "Portal otvorenih podataka",
-    "description": "",
-    "image": "0630cc6390273f1bde9fc0277e43b055.jpg",
-    "image_og": "",
+    "url": "https://bajs.informacija.hr/",
+    "title": "Bajs - statistika korištenja",
+    "description": "Analitička platforma koja prikazuje dostupnost i kretanje NextBike bicikala na svim stanicama u Zagrebu kroz podatke i vizualizacije.",
+    "image": "b1a6d068d9309e70c6ff5b3b0a1ee434.jpg",
+    "image_og": "https://bajs.informacija.hr/og-image.png",
     "site_name": "",
-    "categories": ["protest_art", "documentary"]
+    "categories": [
+      "open_data",
+      "information",
+      "development"
+    ],
+    "by": {
+      "name": "informacija.hr",
+      "url": "https://informacija.hr/"
+    },
+    "socials": null,
+    "group": "bajs",
+    "type": "tool",
+    "language": "hr",
+    "region": "zagreb"
   },
   {
-    "url": "https://www.mozaikveza.hr/",
-    "title": "Mozaik veza",
-    "description": "Mozaik veza je alat koji omogućuje istraživačkim novinarima, aktivistima i zainteresiranoj javnosti istraživanje međusobnih veza politički izloženih osoba, kao i veza s drugim pravnim i fizički osobama, na temelju podataka preuzetih iz registara i baza javnih tijela.",
-    "image": "7771d2a92548a3ab4f7b9af8e7b39415.jpg",
+    "url": "https://bajsanje.informacija.hr/",
+    "title": "Bajsanje - vožnja Bajsom oko Jaruna",
+    "description": "Organizirani grupni izlet biciklima NextBike oko Jaruna, inicijativa za promociju javnog bicikl-sharinga u gradu.",
+    "image": "c844b6d41d0ff361c8a23459cf80267a.jpg",
     "image_og": "",
     "site_name": "",
-    "categories": ["protest_art", "documentary"]
-  },
-  {
-    "url": "https://slobodnadomena.hr/",
-    "title": "Slobodna domena Zadruga za otvoreni kod i dizajn",
-    "description": "",
-    "image": "42d686d651a26dfe8a1805eee8efa832.jpg",
-    "image_og": "",
-    "site_name": "",
-    "categories": ["protest_art", "documentary"]
+    "categories": [
+      "grassroots",
+      "sustainable_living"
+    ],
+    "by": {
+      "name": "informacija.hr",
+      "url": "https://informacija.hr/"
+    },
+    "socials": null,
+    "group": "bajs",
+    "type": "event",
+    "language": "hr",
+    "region": "zagreb"
   },
   {
     "url": "https://www.zelena-akcija.hr/hr",
-    "title": "",
-    "description": "",
+    "title": "Zelena Akcija",
+    "description": "Vodeća hrvatska ekološka organizacija koja se bori za zaštitu okoliša, klimatsku pravdu i održivi razvoj kroz aktivizam i zagovaranje politika.",
     "image": "37885d6e8557ea65e5e11405e0627f57.jpg",
     "image_og": "",
     "site_name": "",
-    "categories": ["protest_art", "documentary"]
+    "categories": [
+      "climate_action",
+      "environmental_justice",
+      "conservation",
+      "lobbying"
+    ],
+    "by": {
+      "name": "Zelena Akcija",
+      "url": "https://www.zelena-akcija.hr/"
+    },
+    "socials": null,
+    "group": null,
+    "type": "organization",
+    "language": "hr",
+    "region": "croatia"
   },
   {
     "url": "https://zelena-akcija.hr/hr/vijesti/predstavljena-nova-aplikacija-pametni-zeleni-telefon",
-    "title": "",
-    "description": "",
+    "title": "Pametni Zeleni Telefon",
+    "description": "Mobilna aplikacija Zelene Akcije za prijavu ekoloških problema i pronalaženje zelenih alternativa u svakodnevnom životu.",
     "image": "84312bf1e9406b5089b20c0acdf8af7f.jpg",
     "image_og": "",
     "site_name": "",
-    "categories": ["protest_art", "documentary"]
+    "categories": [
+      "climate_action",
+      "app_development",
+      "sustainable_living"
+    ],
+    "by": {
+      "name": "Zelena Akcija",
+      "url": "https://www.zelena-akcija.hr/"
+    },
+    "socials": null,
+    "group": null,
+    "type": "tool",
+    "language": "hr",
+    "region": "croatia"
+  },
+  {
+    "url": "https://sindikatbiciklista.hr/",
+    "title": "Sindikat biciklista",
+    "description": "Organizacija koja zagovara prava biciklista i razvoj biciklističke infrastrukture u hrvatskim gradovima kroz aktivizam i suradnju s vlastima.",
+    "image": "1b53c41038d4c490366993cf4cb69223.jpg",
+    "image_og": "https://sindikatbiciklista.hr/wp-content/uploads/2023/01/280x280.png",
+    "site_name": "Sindikat biciklista",
+    "categories": [
+      "grassroots",
+      "lobbying",
+      "sustainable_living"
+    ],
+    "by": {
+      "name": "Sindikat biciklista",
+      "url": "https://sindikatbiciklista.hr/"
+    },
+    "socials": {
+      "facebook": "https://web.facebook.com/sindikatbiciklista"
+    },
+    "group": null,
+    "type": "organization",
+    "language": "hr",
+    "region": "croatia"
   },
   {
     "url": "https://zet-info.com/",
-    "title": "ZET info",
-    "description": "ZET info",
+    "title": "ZET Info",
+    "description": "Neformalni portal s informacijama o rasporedu i kašnjenjima ZET-a (Zagrebački električni tramvaj) u stvarnom vremenu.",
     "image": "1327690b2765f2f44ef406fbfba97e0b.jpg",
     "image_og": "",
     "site_name": "",
-    "categories": ["protest_art", "documentary"]
+    "categories": [
+      "information",
+      "app_development"
+    ],
+    "by": {
+      "name": "Neformalni autor"
+    },
+    "socials": null,
+    "group": null,
+    "type": "tool",
+    "language": "hr",
+    "region": "zagreb"
+  },
+  {
+    "url": "https://www.promet-info.hr/",
+    "title": "Nacionalna Pristupna Točka",
+    "description": "Digitalno sučelje za prometne podatke koje objedinjuje informacije o stanju na cestama, ITS uslugama i prometnoj infrastrukturi.",
+    "image": "1080d600427385d4cd02d260edb28eee.jpg",
+    "image_og": "https://www.promet-info.hr/Data/Sites/-1/media/images/npt_meta_image.png",
+    "site_name": "",
+    "categories": [
+      "open_data",
+      "information"
+    ],
+    "by": {
+      "name": "Republika Hrvatska",
+      "url": "https://gov.hr/"
+    },
+    "socials": null,
+    "group": null,
+    "type": "dataset",
+    "language": "hr",
+    "region": "croatia"
+  },
+  {
+    "url": "https://www.poslovna.hr/",
+    "title": "Poslovna",
+    "description": "Najveća hrvatska baza poslovnih podataka s informacijama o svim trgovačkim društvima, obrtnicima i poslovnim subjektima.",
+    "image": "36db2046058c9647dbab1151ea8eff9c.jpg",
+    "image_og": "",
+    "site_name": "",
+    "categories": [
+      "open_data",
+      "information"
+    ],
+    "by": {
+      "name": "Bisnode / Dun & Bradstreet"
+    },
+    "socials": null,
+    "group": null,
+    "type": "tool",
+    "language": "hr",
+    "region": "croatia"
+  },
+  {
+    "url": "https://www.northdata.com/",
+    "title": "North Data",
+    "description": "Europska platforma s javno dostupnim podacima o tvrtkama iz trgovačkih registara, godišnjih izvještaja i financijskih registara.",
+    "image": "9361ebfaac473c73f33a80e12c8609ec.jpg",
+    "image_og": "",
+    "site_name": "",
+    "categories": [
+      "open_data",
+      "information"
+    ],
+    "by": {
+      "name": "North Data GmbH",
+      "url": "https://www.northdata.com/"
+    },
+    "socials": null,
+    "group": null,
+    "type": "tool",
+    "language": "en",
+    "region": "eu"
+  },
+  {
+    "url": "https://usporedicijene.info/",
+    "title": "Usporedi cijene",
+    "description": "Platforma za pronalaženje i uspoređivanje cijena proizvoda u hrvatskim trgovinama, pomaže potrošačima u donošenju odluka.",
+    "image": "7532eb9e617695741d91c310ea18e18e.jpg",
+    "image_og": "",
+    "site_name": "",
+    "categories": [
+      "ethical_consumerism",
+      "information"
+    ],
+    "by": {
+      "name": "Neformalni autor"
+    },
+    "socials": null,
+    "group": null,
+    "type": "tool",
+    "language": "hr",
+    "region": "croatia"
+  },
+  {
+    "url": "https://arhium.hr/",
+    "title": "Arhium",
+    "description": "Platforma za automatsku analizu uvjeta gradnje za traženo zemljište, namijenjena arhitektima, agentima za nekretnine i investitorima.",
+    "image": "d86f905956b8adcd36ab8c5a642f0207.jpg",
+    "image_og": "https://www.arhium.hr/opengraph-image.png?opengraph-image.f9837fe4.png",
+    "site_name": "Arhium",
+    "categories": [
+      "open_data",
+      "information"
+    ],
+    "by": {
+      "name": "crisp.hr",
+      "url": "https://crisp.hr/"
+    },
+    "socials": null,
+    "group": null,
+    "type": "tool",
+    "language": "hr",
+    "region": "croatia"
+  },
+  {
+    "url": "https://nemadima.hr/",
+    "title": "Nema dima",
+    "description": "Interaktivna karta nepušačkih prostora u Hrvatskoj koja pomaže građanima pronaći mjesta slobodna od duhanskog dima.",
+    "image": "e4e9451510a4a5f2e9db08fbda6deb61.jpg",
+    "image_og": "https://nemadima.hr/og-image.png",
+    "site_name": "Nema dima",
+    "categories": [
+      "public_health",
+      "information",
+      "app_development"
+    ],
+    "by": {
+      "name": "crisp.hr",
+      "url": "https://crisp.hr/"
+    },
+    "socials": null,
+    "group": null,
+    "type": "tool",
+    "language": "hr",
+    "region": "croatia"
+  },
+  {
+    "url": "https://www.cms.hr/",
+    "title": "Centar za mirovne studije",
+    "description": "Organizacija civilnog društva koja štiti ljudska prava i teži društvenoj promjeni kroz aktivizam, obrazovanje, istraživanje i direktnu podršku marginaliziranim skupinama.",
+    "image": "8b7a1be6bac29a9101bcf353ae9c81a4.jpg",
+    "image_og": "",
+    "site_name": "",
+    "categories": [
+      "civil_liberties",
+      "minority_rights",
+      "refugee_rights",
+      "public_education"
+    ],
+    "by": {
+      "name": "Centar za mirovne studije",
+      "url": "https://www.cms.hr/"
+    },
+    "socials": null,
+    "group": null,
+    "type": "organization",
+    "language": "hr",
+    "region": "croatia"
+  },
+  {
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+    "title": "EU AI Act",
+    "description": "Prvo regulatorno pravno okvir na svijetu za umjetnu inteligenciju koje adresira rizike AI sustava prema razini rizika.",
+    "image": "72e79a7e55ba86b60b26e3cfcfba59e7.jpg",
+    "image_og": "",
+    "site_name": "Shaping Europe’s digital future",
+    "categories": [
+      "policy",
+      "information",
+      "digital_security"
+    ],
+    "by": {
+      "name": "Europska komisija",
+      "url": "https://commission.europa.eu/"
+    },
+    "socials": null,
+    "group": null,
+    "type": "information",
+    "language": "en",
+    "region": "eu"
+  },
+  {
+    "url": "https://datareportal.com/",
+    "title": "DataReportal",
+    "description": "Platforma s tisućama besplatnih izvještaja i globalnih statističkih podataka o korištenju interneta, društvenih mreža i digitalnih usluga.",
+    "image": "bc50de65f7ee5b8453d1bf83cc8b6efd.jpg",
+    "image_og": "http://static1.squarespace.com/static/5b79011d266c077298791201/t/620dbe2f547ffc3c39ca67d3/1645067823170/DataReportal+Social+Sharing+Image+02.png?format=1500w",
+    "site_name": "DataReportal – Global Digital Insights",
+    "categories": [
+      "information",
+      "open_data"
+    ],
+    "by": {
+      "name": "Kepios",
+      "url": "https://kepios.com/"
+    },
+    "socials": null,
+    "group": null,
+    "type": "dataset",
+    "language": "en",
+    "region": "eu"
+  },
+  {
+    "url": "https://ec.europa.eu/internal_market/imi-net/index_en.htm",
+    "title": "The Internal Market Information System (IMI)",
+    "description": "Sigurni višejezični online alat koji olakšava razmjenu informacija između javnih tijela u provedbi prava EU unutarnjeg tržišta.",
+    "image": "5d5329166ca564835922a3ca6fe1891f.jpg",
+    "image_og": "",
+    "site_name": "",
+    "categories": [
+      "information",
+      "open_data",
+      "policy"
+    ],
+    "by": {
+      "name": "Europska komisija",
+      "url": "https://commission.europa.eu/"
+    },
+    "socials": null,
+    "group": null,
+    "type": "tool",
+    "language": "en",
+    "region": "eu"
   }
 ]

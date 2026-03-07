@@ -121,9 +121,9 @@ echo "# URL -> Screenshot Mapping" > "${OUTPUT_DIR}/url_mapping.txt"
 echo "# Generated on $(date)" >> "${OUTPUT_DIR}/url_mapping.txt"
 echo "-----------------------------------" >> "${OUTPUT_DIR}/url_mapping.txt"
 
-# Extract all URLs from the JSON file
+# Extract all URLs from the JSON file (URL-keyed object format)
 echo "Reading URLs from $METADATA_FILE..."
-urls_raw=$(jq -r '.[].url' $METADATA_FILE)
+urls_raw=$(jq -r 'keys[]' $METADATA_FILE)
 urls=($(echo $urls_raw | tr "\n" "\n"))
 
 # Process each URL

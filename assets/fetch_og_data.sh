@@ -21,13 +21,14 @@ USER_AGENT="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (
 # Create temp directory
 mkdir -p $TEMP_DIR
 
-# Initialize results object
-echo "[]" > $OUTPUT_FILE
+# Initialize output file if it doesn't exist
+if [[ ! -f $OUTPUT_FILE ]]; then
+  echo "{}" > $OUTPUT_FILE
+fi
 
 # Function to extract OG metadata from HTML
 extract_og_data() {
   local url=$1
-  local output_file=$2
   local domain=$(echo $url | awk -F/ '{print $3}')
   local html_file="$TEMP_DIR/${domain//[^a-zA-Z0-9]/_}.html"
 
@@ -52,18 +53,16 @@ extract_og_data() {
     description=$(grep -o '<meta name="description" content="[^"]*"' "$html_file" | sed 's/.*content="\([^"]*\)".*/\1/')
   fi
 
-  # Create JSON object
+  # Build JSON entry and merge into URL-keyed output file
   local json=$(jq -n \
-    --arg url "$url" \
     --arg title "$title" \
     --arg description "$description" \
     --arg image "$image" \
     --arg image_og "$image_og" \
     --arg site_name "$site_name" \
-    '{url: $url, title: $title, description: $description, image: $image, image_og: $image_og, site_name: $site_name}')
+    '{title: $title, description: $description, image: $image, image_og: $image_og, site_name: $site_name}')
 
-  # Add to results file
-  jq --argjson data "$json" '. + [$data]' $OUTPUT_FILE > "${OUTPUT_FILE}.tmp" && mv "${OUTPUT_FILE}.tmp" $OUTPUT_FILE
+  jq --arg url "$url" --argjson data "$json" '. + {($url): $data}' $OUTPUT_FILE > "${OUTPUT_FILE}.tmp" && mv "${OUTPUT_FILE}.tmp" $OUTPUT_FILE
 
   echo "Processed $url"
 }
@@ -71,14 +70,18 @@ extract_og_data() {
 # Main process
 echo "Reading sources from $SOURCES_FILE..."
 
-# Extract all links from the YAML file
-links_raw=$(yq eval '.sources[].links[]' $SOURCES_FILE)
-links=($(echo $links_raw | tr "\n" "\n"))
+# Extract all URLs from sources.yaml
+urls=($(yq eval '.sources[].url' $SOURCES_FILE))
 
-# Process each link
-for link in "${links[@]}"; do
-  extract_og_data $link $OUTPUT_FILE
-  # Add a small delay to avoid rate limiting
+# Process each URL, skipping ones already cached
+for url in "${urls[@]}"; do
+  already_fetched=$(jq --arg url "$url" 'has($url)' $OUTPUT_FILE)
+  if [[ "$already_fetched" == "true" ]]; then
+    echo "Skipping (cached): $url"
+    continue
+  fi
+
+  extract_og_data $url
   sleep 1
 done
 
@@ -86,4 +89,4 @@ done
 rm -rf $TEMP_DIR
 
 echo "Done! Open Graph data saved to $OUTPUT_FILE"
-echo "Found metadata for $(jq 'keys | length' $OUTPUT_FILE) links"
+echo "Total cached entries: $(jq 'keys | length' $OUTPUT_FILE)"
