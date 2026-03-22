@@ -1,16 +1,13 @@
-import 'dart:convert';
-
+import 'package:aktivizam/config.dart';
 import 'package:aktivizam/data/activism_path.dart';
 import 'package:aktivizam/data/activism_source.dart';
 import 'package:aktivizam/data/activitsm_categories.dart';
+import 'package:aktivizam/providers/filter_provider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
-
-// TODO: Set to your actual GitHub repository URL before deploying
-const _kGithubRepo = 'https://github.com/OWNER/REPO';
 
 const _primaryColor = Color(0xFF2B4BEE);
 const _bgColor = Color(0xFFF5F7FF);
@@ -20,7 +17,7 @@ const _textPrimary = Color(0xFF111827);
 const _textSecondary = Color(0xFF6B7280);
 
 void main() {
-  runApp(const MyApp());
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -43,70 +40,20 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyHomePage extends StatefulWidget {
+class MyHomePage extends ConsumerStatefulWidget {
   const MyHomePage({super.key});
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  ConsumerState<MyHomePage> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  final List<ActivismSource> sources = List.empty(growable: true);
-  final List<ActivismCategory> filters = List.empty(growable: true);
-  ActivismPath? _selectedPath;
+class _MyHomePageState extends ConsumerState<MyHomePage> {
   final _searchCtrl = TextEditingController();
-  String _searchQuery = '';
-
-  @override
-  void initState() {
-    super.initState();
-    _prepareData();
-  }
 
   @override
   void dispose() {
     _searchCtrl.dispose();
     super.dispose();
-  }
-
-  Future<void> _prepareData() async {
-    final metadataRaw = await rootBundle.loadString('assets/sources.json');
-    sources.addAll(
-      (jsonDecode(metadataRaw) as List<dynamic>).map((e) => ActivismSource.fromJson(e)).toList(),
-    );
-    setState(() {});
-  }
-
-  List<ActivismSource> get filteredSources {
-    var result = _selectedPath != null
-        ? sources.where((s) => _selectedPath!.sourceUrls.contains(s.link)).toList()
-        : List<ActivismSource>.from(sources);
-    if (filters.isNotEmpty) {
-      result = result.where((s) => filters.every((f) => s.categories.contains(f))).toList();
-    }
-    if (_searchQuery.isNotEmpty) {
-      final q = _searchQuery.toLowerCase();
-      result =
-          result.where((s) => s.title.toLowerCase().contains(q) || s.description.toLowerCase().contains(q)).toList();
-    }
-    return result;
-  }
-
-  void _selectPath(ActivismPath? path) {
-    setState(() {
-      _selectedPath = path;
-      filters.clear();
-    });
-  }
-
-  void _toggleFilter(ActivismCategory category, bool selected) {
-    setState(() {
-      if (selected) {
-        filters.add(category);
-      } else {
-        filters.remove(category);
-      }
-    });
   }
 
   void _openDetail(BuildContext context, ActivismSource source) {
@@ -145,12 +92,14 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final filtered = ref.watch(filteredSourcesProvider);
+    final filter = ref.watch(filterProvider);
     final width = MediaQuery.sizeOf(context).width;
     final isDesktop = width >= 1024;
 
     return Scaffold(
       backgroundColor: _bgColor,
-      body: isDesktop ? _buildDesktop() : _buildMobile(context),
+      body: isDesktop ? _buildDesktop(filtered, filter) : _buildMobile(context, filtered, filter),
       // floatingActionButton: isDesktop
       //     ? null
       //     : FloatingActionButton.extended(
@@ -172,15 +121,16 @@ class _MyHomePageState extends State<MyHomePage> {
 
   // ── Desktop ──────────────────────────────────────────────────────────────
 
-  Widget _buildDesktop() {
+  Widget _buildDesktop(List<ActivismSource> filtered, FilterState filter) {
+    final notifier = ref.read(filterProvider.notifier);
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         _DesktopSidebar(
-          filters: filters,
-          onToggle: _toggleFilter,
-          selectedPath: _selectedPath,
-          onSelectPath: _selectPath,
+          filters: filter.categories,
+          onToggle: notifier.toggleCategory,
+          selectedPath: filter.selectedPath,
+          onSelectPath: notifier.selectPath,
           onSuggest: () => _openSuggest(context),
         ),
         Expanded(
@@ -188,13 +138,13 @@ class _MyHomePageState extends State<MyHomePage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               _DesktopHeader(
-                count: filteredSources.length,
+                count: filtered.length,
                 searchController: _searchCtrl,
-                onSearchChanged: (v) => setState(() => _searchQuery = v),
+                onSearchChanged: notifier.setSearchQuery,
               ),
               Expanded(
                 child: _SourceGrid(
-                  sources: filteredSources,
+                  sources: filtered,
                   crossAxisCount: 3,
                   onTap: (s) => _openDetail(context, s),
                 ),
@@ -208,27 +158,28 @@ class _MyHomePageState extends State<MyHomePage> {
 
   // ── Mobile ───────────────────────────────────────────────────────────────
 
-  Widget _buildMobile(BuildContext context) {
+  Widget _buildMobile(BuildContext context, List<ActivismSource> filtered, FilterState filter) {
+    final notifier = ref.read(filterProvider.notifier);
     return Column(
       children: [
         _MobileHeader(),
         _MobileSearchBar(
           controller: _searchCtrl,
-          onChanged: (v) => setState(() => _searchQuery = v),
+          onChanged: notifier.setSearchQuery,
         ),
         _MobilePathRow(
-          selectedPath: _selectedPath,
-          onSelectPath: _selectPath,
+          selectedPath: filter.selectedPath,
+          onSelectPath: notifier.selectPath,
         ),
         _MobileFilterRow(
-          filters: filters,
-          onToggle: _toggleFilter,
-          onClearAll: () => setState(() => filters.clear()),
+          filters: filter.categories,
+          onToggle: notifier.toggleCategory,
+          onClearAll: notifier.clearCategories,
         ),
         const Divider(height: 1, color: _cardBorderColor),
         Expanded(
           child: _SourceGrid(
-            sources: filteredSources,
+            sources: filtered,
             crossAxisCount: 1,
             onTap: (s) => _openDetail(context, s),
           ),
@@ -1139,10 +1090,13 @@ class _SourceImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (source.image.isNotEmpty) {
-      return Image.asset(
-        'assets/screenshots/${source.image}',
+      return Image.network(
+        '$kGithubRawBase/assets/screenshots/${source.image}',
         fit: BoxFit.cover,
-        errorBuilder: (_, __, ___) => _Placeholder(title: source.title),
+        errorBuilder: (_, err, stacktrace) {
+          debugPrint(err.toString());
+          return _Placeholder(title: source.title);
+        },
       );
     }
     return _Placeholder(title: source.title);
@@ -1333,19 +1287,19 @@ class _SuggestFormState extends State<_SuggestForm> {
     final title = _titleCtrl.text.trim();
     final desc = _descCtrl.text.trim();
 
-    final issueTitle = Uri.encodeComponent(
+    final subject = Uri.encodeComponent(
       'Prijedlog resursa${title.isNotEmpty ? ": $title" : ""}',
     );
     final bodyLines = [
-      '**URL:** $url',
-      if (title.isNotEmpty) '\n**Naziv:** $title',
-      if (desc.isNotEmpty) '\n**Opis:** $desc',
-      '\n\n---\n*Poslan putem HR Aktivizam app*',
+      'URL: $url',
+      if (title.isNotEmpty) '\nNaziv: $title',
+      if (desc.isNotEmpty) '\nOpis: $desc',
+      '\n\n---\nPoslan putem HR Aktivizam app',
     ];
-    final issueBody = Uri.encodeComponent(bodyLines.join());
+    final body = Uri.encodeComponent(bodyLines.join());
 
     launchUrl(
-      Uri.parse('$_kGithubRepo/issues/new?title=$issueTitle&body=$issueBody'),
+      Uri.parse('mailto:arilus.hr@gmail.com?subject=$subject&body=$body'),
       mode: LaunchMode.externalApplication,
     );
     Navigator.of(context).pop();
@@ -1398,7 +1352,7 @@ class _SuggestFormState extends State<_SuggestForm> {
             child: FilledButton.icon(
               onPressed: _submit,
               icon: const Icon(Icons.open_in_new, size: 16),
-              label: const Text('Otvori GitHub zahtjev'),
+              label: const Text('Pošalji email'),
               style: FilledButton.styleFrom(
                 backgroundColor: _primaryColor,
                 padding: const EdgeInsets.symmetric(vertical: 14),
