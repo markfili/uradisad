@@ -100,7 +100,7 @@ class _SuggestFormState extends State<SuggestForm> {
       'URL: $url',
       if (title.isNotEmpty) '\nNaziv: $title',
       if (desc.isNotEmpty) '\nOpis: $desc',
-      '\n\n---\nPoslan putem HR Aktivizam app',
+      '\n\n---\nPoslan putem Uradi sad app',
     ];
     final body = Uri.encodeComponent(bodyLines.join());
 
@@ -129,7 +129,7 @@ class _SuggestFormState extends State<SuggestForm> {
           ),
           const SizedBox(height: 6),
           const Text(
-            'Poznaješ dobar alat ili organizaciju za HR aktivizam? Pošalji prijedlog — uredit ćemo i dodati.',
+            'Poznaješ dobar alat ili organizaciju? Pošalji prijedlog — uredit ćemo i dodati.',
             style: TextStyle(fontSize: 14, color: textSecondary, height: 1.5),
           ),
           const SizedBox(height: 20),
