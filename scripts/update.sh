@@ -8,6 +8,9 @@
 #   3. merge_sources.sh  — regenerate sources.json from sources.yaml + og_metadata.json
 #
 # All scripts are cache-aware: already-processed URLs are skipped.
+#
+# To refresh only descriptions (e.g. after editing sources.yaml or re-fetching OG data)
+# without rebuilding all other fields, run: ./update_descriptions.sh
 
 set -e
 
