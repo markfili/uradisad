@@ -16,7 +16,7 @@ for cmd in yq jq; do
   fi
 done
 
-SCRIPT_DIR="${0:A:h}"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 SOURCES_FILE="${SCRIPT_DIR}/../assets/sources.json"
 METADATA_FILE="${SCRIPT_DIR}/../data/og_metadata.json"
 YAML_FILE="${SCRIPT_DIR}/../data/sources.yaml"

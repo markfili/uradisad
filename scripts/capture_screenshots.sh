@@ -19,7 +19,7 @@ for cmd in jq node npm md5; do
 done
 
 # Configuration
-SCRIPT_DIR="${0:A:h}"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 METADATA_FILE="${SCRIPT_DIR}/../data/og_metadata.json"
 OUTPUT_DIR="${SCRIPT_DIR}/../assets/screenshots"
 URL_MAPPING="${SCRIPT_DIR}/../data/url_mapping.txt"

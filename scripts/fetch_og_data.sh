@@ -13,7 +13,7 @@ for cmd in yq curl jq; do
 done
 
 # Configuration
-SCRIPT_DIR="${0:A:h}"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 SOURCES_FILE="${SCRIPT_DIR}/../data/sources.yaml"
 OUTPUT_FILE="${SCRIPT_DIR}/../data/og_metadata.json"
 TEMP_DIR="/tmp/og_data"

@@ -15,7 +15,7 @@ for cmd in yq jq; do
   fi
 done
 
-SCRIPT_DIR="${0:A:h}"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 SOURCES_FILE="${SCRIPT_DIR}/../data/sources.yaml"
 METADATA_FILE="${SCRIPT_DIR}/../data/og_metadata.json"
 OUTPUT_FILE="${SCRIPT_DIR}/../assets/sources.json"
@@ -60,10 +60,10 @@ for (( i=0; i<count; i++ )); do
   og_image_og=$(jq -r --arg url "$url" '.[$url].image_og // ""' $METADATA_FILE)
   og_site_name=$(jq -r --arg url "$url" '.[$url].site_name // ""' $METADATA_FILE)
 
-  # Editorial description wins; fall back to auto-fetched
-  final_description="$description"
+  # OG description wins; fall back to editorial
+  final_description="$og_description"
   if [[ -z "$final_description" || "$final_description" == "null" ]]; then
-    final_description="$og_description"
+    final_description="$description"
   fi
 
   # Build the JSON entry
