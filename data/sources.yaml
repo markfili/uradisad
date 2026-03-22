@@ -1,702 +1,657 @@
 sources:
-- title: GONG
-  url: https://gong.hr/
-  by:
-    name: GONG - Građani organizirano nadgledaju glasanje
+  - title: GONG
     url: https://gong.hr/
-  description: Nestranačka udruga građana koja potiče aktivnije sudjelovanje u demokratskim
-    procesima, prati izbore i bori se protiv korupcije.
-  type: organization
-  language: hr
-  region: croatia
-  categories:
-  - public_education
-  - media_advocacy
-  - voting
-  - lobbying
-  paths:
-  - vlast
-  - prava
-- title: Imamo Pravo Znati
-  url: https://imamopravoznati.org/
-  by:
-    name: mySociety / lokalna adaptacija
-    url: https://www.mysociety.org/
-  description: Platforma za slanje zahtjeva za pristup informacijama javnim tijelima
-    u Hrvatskoj, temeljena na WhatDoTheyKnow.
-  type: tool
-  language: hr
-  region: croatia
-  categories:
-  - information
-  - open_data
-  - civil_liberties
-  paths:
-  - vlast
-  - digitalno
-  - prava
-- title: Mozaik Veza
-  url: https://www.mozaikveza.hr/
-  by:
-    name: GONG
-    url: https://gong.hr/
-  description: Alat za istraživanje međusobnih veza politički izloženih osoba s pravnim
-    i fizičkim osobama, temeljen na javnim registrima.
-  type: tool
-  language: hr
-  region: croatia
-  categories:
-  - information
-  - open_data
-  - media_advocacy
-  paths:
-  - vlast
-- title: Detektor imovine
-  url: https://www.detektorimovine.hr/
-  by:
-    name: GONG
-    url: https://gong.hr/
-  description: Baza podataka o imovini i prihodima hrvatskih dužnosnika i političara
-    preuzeta iz službenih izvješća.
-  type: tool
-  language: hr
-  region: croatia
-  categories:
-  - information
-  - open_data
-  - media_advocacy
-  paths:
-  - vlast
-- title: Povjerenstvo za odlučivanje o sukobu interesa
-  url: https://www.sukobinteresa.hr/
-  by:
-    name: Republika Hrvatska
-    url: https://gov.hr/
-  description: Službena stranica povjerenstva koje nadzire sukob interesa dužnosnika
-    i vodi registar njihove imovine.
-  type: tool
-  language: hr
-  region: croatia
-  categories:
-  - information
-  - open_data
-  paths:
-  - vlast
-- title: Kartografija otpora
-  url: https://www.kartografija-otpora.org/hr/
-  by:
-    name: Kartografija otpora
-    url: https://www.kartografija-otpora.org/
-  description: Interaktivna karta koja dokumentira prosvjede, akcije i organizacije
-    civilnog društva u Hrvatskoj i regiji.
-  type: tool
-  language: hr
-  region: croatia
-  categories:
-  - information
-  - protests
-  - social_media
-  paths:
-  - grad
-  - prava
-- title: Mreža Antifašistkinja Zagreb
-  url: https://www.maz.hr/
-  by:
-    name: Mreža Antifašistkinja Zagreb
+    by:
+      name: GONG - Građani organizirano nadgledaju glasanje
+      url: https://gong.hr/
+    description: Nestranačka udruga građana koja potiče aktivnije sudjelovanje u demokratskim procesima, prati izbore i bori se protiv korupcije.
+    type: organization
+    language: hr
+    region: croatia
+    categories:
+      - public_education
+      - media_advocacy
+      - voting
+      - lobbying
+    paths:
+      - vlast
+      - prava
+  - title: Imamo Pravo Znati
+    url: https://imamopravoznati.org/
+    by:
+      name: mySociety / lokalna adaptacija
+      url: https://www.mysociety.org/
+    description: Platforma za slanje zahtjeva za pristup informacijama javnim tijelima u Hrvatskoj, temeljena na WhatDoTheyKnow.
+    type: tool
+    language: hr
+    region: croatia
+    categories:
+      - information
+      - open_data
+      - civil_liberties
+    paths:
+      - vlast
+      - digitalno
+      - prava
+  - title: Mozaik Veza
+    url: https://www.mozaikveza.hr/
+    by:
+      name: GONG
+      url: https://gong.hr/
+    description: Alat za istraživanje međusobnih veza politički izloženih osoba s pravnim i fizičkim osobama, temeljen na javnim registrima.
+    type: tool
+    language: hr
+    region: croatia
+    categories:
+      - information
+      - open_data
+      - media_advocacy
+    paths:
+      - vlast
+  - title: Detektor imovine
+    url: https://www.detektorimovine.hr/
+    by:
+      name: GONG
+      url: https://gong.hr/
+    description: Baza podataka o imovini i prihodima hrvatskih dužnosnika i političara preuzeta iz službenih izvješća.
+    type: tool
+    language: hr
+    region: croatia
+    categories:
+      - information
+      - open_data
+      - media_advocacy
+    paths:
+      - vlast
+  - title: Povjerenstvo za odlučivanje o sukobu interesa
+    url: https://www.sukobinteresa.hr/
+    by:
+      name: Republika Hrvatska
+      url: https://gov.hr/
+    description: Službena stranica povjerenstva koje nadzire sukob interesa dužnosnika i vodi registar njihove imovine.
+    type: tool
+    language: hr
+    region: croatia
+    categories:
+      - information
+      - open_data
+    paths:
+      - vlast
+  - title: Kartografija otpora
+    url: https://www.kartografija-otpora.org/hr/
+    by:
+      name: Kartografija otpora
+      url: https://www.kartografija-otpora.org/
+    description: Interaktivna karta koja dokumentira prosvjede, akcije i organizacije civilnog društva u Hrvatskoj i regiji.
+    type: tool
+    language: hr
+    region: croatia
+    categories:
+      - information
+      - protests
+      - social_media
+    paths:
+      - grad
+      - prava
+  - title: Mreža Antifašistkinja Zagreb
     url: https://www.maz.hr/
-  description: Feministička i antifašistička organizacija koja se bori za rodnu ravnopravnost,
-    prava žena i antidiskriminaciju.
-  type: organization
-  language: hr
-  region: zagreb
-  categories:
-  - grassroots
-  - coalition
-  - public_education
-  socials:
-    facebook: https://web.facebook.com/antifamrezazg
-  paths:
-  - prava
-- title: GONG školica za lokalne aktiviste u Šibeniku
-  url: https://gong.hr/2026/02/24/prijavi-se-na-prvu-gongovu-skolu-za-lokalne-aktiviste-u-sibeniku/
-  by:
-    name: GONG
-    url: https://gong.hr/
-  description: Edukativni program za građane koji žele naučiti kako se boriti protiv
-    korupcije na lokalnoj razini i koristiti mehanizme građanskog nadzora.
-  type: event
-  language: hr
-  region: croatia
-  categories:
-  - public_education
-  - grassroots
-  - lobbying
-  paths:
-  - vlast
-- title: Parlametar
-  url: https://parlametar.hr/
-  by:
-    name: Parlametar tim
+    by:
+      name: Mreža Antifašistkinja Zagreb
+      url: https://www.maz.hr/
+    description: Feministička i antifašistička organizacija koja se bori za rodnu ravnopravnost, prava žena i antidiskriminaciju.
+    type: organization
+    language: hr
+    region: zagreb
+    categories:
+      - grassroots
+      - coalition
+      - public_education
+    socials:
+      facebook: https://web.facebook.com/antifamrezazg
+    paths:
+      - prava
+  - title: GONG školica za lokalne aktiviste u Šibeniku
+    url: https://gong.hr/2026/02/24/prijavi-se-na-prvu-gongovu-skolu-za-lokalne-aktiviste-u-sibeniku/
+    by:
+      name: GONG
+      url: https://gong.hr/
+    description: Edukativni program za građane koji žele naučiti kako se boriti protiv korupcije na lokalnoj razini i koristiti mehanizme građanskog nadzora.
+    type: event
+    language: hr
+    region: croatia
+    categories:
+      - public_education
+      - grassroots
+      - lobbying
+    paths:
+      - vlast
+  - title: Parlametar
     url: https://parlametar.hr/
-  description: Alat za praćenje rada Hrvatskog sabora kroz analizu glasanja, transkripata
-    zastupničkih nastupa i statističke preglede.
-  type: tool
-  language: hr
-  region: croatia
-  categories:
-  - information
-  - open_data
-  - media_advocacy
-  paths:
-  - vlast
-- title: Državni Portal Otvorenih Podataka
-  url: https://data.gov.hr/
-  by:
-    name: Republika Hrvatska
-    url: https://gov.hr/
-  description: Središnji portal za objavu i preuzimanje otvorenih podataka javnih
-    tijela Republike Hrvatske.
-  type: dataset
-  language: hr
-  region: croatia
-  categories:
-  - open_data
-  - information
-  paths: []
-- title: Praćenje provedbe predizbornih obećanja
-  url: https://lookerstudio.google.com/u/0/reporting/cab3e2df-5406-4b30-aa84-244d60361a88/page/ssaoD
-  by:
-    name: GONG
-    url: https://gong.hr/
-  group: predizborna_obecanja
-  description: Vizualni pregled napretka u provedbi predizbornih obećanja stranaka
-    na lokalnoj razini.
-  description_source: editorial
-  type: tool
-  language: hr
-  region: croatia
-  categories:
-  - information
-  - open_data
-  - voting
-  paths:
-  - vlast
-- title: Praćenje provedbe predizbornih obećanja (dataset)
-  url: https://docs.google.com/spreadsheets/d/1wo_D2bJji_Sbq_tmuvOIlzbSst7Mbl5_TjoB769xVLI/edit?gid=0
-  by:
-    name: GONG
-    url: https://gong.hr/
-  group: predizborna_obecanja
-  description: Otvoreni skup podataka koji bilježi provedbu predizbornih obećanja,
-    dostupan za preuzimanje i analizu.
-  type: dataset
-  language: hr
-  region: croatia
-  categories:
-  - open_data
-  - information
-  paths:
-  - vlast
-- title: Izborni Simulator
-  url: https://izbornisimulator.azurewebsites.net/
-  by:
-    name: Nepoznat autor
-  description: Simulator koji vizualizira kako bi se rasporedili zastupnički mandati
-    pri različitim izbornim ishodima u Hrvatskom saboru.
-  type: tool
-  language: hr
-  region: croatia
-  categories:
-  - information
-  - voting
-  paths:
-  - vlast
-- title: Portal Oštro
-  url: https://www.portal-ostro.hr/
-  by:
-    name: Oštro - Centar za istraživačko novinarstvo
+    by:
+      name: Parlametar tim
+      url: https://parlametar.hr/
+    description: Alat za praćenje rada Hrvatskog sabora kroz analizu glasanja, transkripata zastupničkih nastupa i statističke preglede.
+    type: tool
+    language: hr
+    region: croatia
+    categories:
+      - information
+      - open_data
+      - media_advocacy
+    paths:
+      - vlast
+  - title: Državni Portal Otvorenih Podataka
+    url: https://data.gov.hr/
+    by:
+      name: Republika Hrvatska
+      url: https://gov.hr/
+    description: Središnji portal za objavu i preuzimanje otvorenih podataka javnih tijela Republike Hrvatske.
+    type: dataset
+    language: hr
+    region: croatia
+    categories:
+      - open_data
+      - information
+    paths: []
+  - title: Praćenje provedbe predizbornih obećanja
+    url: https://lookerstudio.google.com/u/0/reporting/cab3e2df-5406-4b30-aa84-244d60361a88/page/ssaoD
+    by:
+      name: GONG
+      url: https://gong.hr/
+    group: predizborna_obecanja
+    description: Vizualni pregled napretka u provedbi predizbornih obećanja stranaka na lokalnoj razini.
+    description_source: editorial
+    type: tool
+    language: hr
+    region: croatia
+    categories:
+      - information
+      - open_data
+      - voting
+    paths:
+      - vlast
+  - title: Praćenje provedbe predizbornih obećanja (dataset)
+    url: https://docs.google.com/spreadsheets/d/1wo_D2bJji_Sbq_tmuvOIlzbSst7Mbl5_TjoB769xVLI/edit?gid=0
+    by:
+      name: GONG
+      url: https://gong.hr/
+    group: predizborna_obecanja
+    description: Otvoreni skup podataka koji bilježi provedbu predizbornih obećanja, dostupan za preuzimanje i analizu.
+    type: dataset
+    language: hr
+    region: croatia
+    categories:
+      - open_data
+      - information
+    paths:
+      - vlast
+  - title: Izborni Simulator
+    url: https://izbornisimulator.azurewebsites.net/
+    by:
+      name: Nepoznat autor
+    description: Simulator koji vizualizira kako bi se rasporedili zastupnički mandati pri različitim izbornim ishodima u Hrvatskom saboru.
+    type: tool
+    language: hr
+    region: croatia
+    categories:
+      - information
+      - voting
+    paths:
+      - vlast
+  - title: Portal Oštro
     url: https://www.portal-ostro.hr/
-  description: Centar za istraživačko novinarstvo u jadranskoj regiji koji objavljuje
-    dubinska istraživanja korupcije, kriminala i zlouporabe vlasti.
-  type: organization
-  language: hr
-  region: croatia
-  categories:
-  - media_advocacy
-  - information
-  - documentary
-  paths:
-  - vlast
-- title: Public Money Public Code
-  url: https://pmpc.hr/
-  by:
-    name: HrOpen / FSFE
-    url: https://fsfe.org/
-  description: Hrvatska kampanja inicijative Free Software Foundation Europe koja
-    zagovara da javno financirani softver bude objavljen kao otvoreni kod.
-  description_source: editorial
-  type: organization
-  language: hr
-  region: croatia
-  categories:
-  - public_education
-  - app_development
-  - open_data
-  paths:
-  - digitalno
-- title: Code For Croatia
-  url: https://codeforcroatia.org/
-  by:
-    name: Code For Croatia zajednica
+    by:
+      name: Oštro - Centar za istraživačko novinarstvo
+      url: https://www.portal-ostro.hr/
+    description: Centar za istraživačko novinarstvo u jadranskoj regiji koji objavljuje dubinska istraživanja korupcije, kriminala i zlouporabe vlasti.
+    type: organization
+    language: hr
+    region: croatia
+    categories:
+      - media_advocacy
+      - information
+      - documentary
+    paths:
+      - vlast
+  - title: Public Money Public Code
+    url: https://pmpc.hr/
+    by:
+      name: HrOpen / FSFE
+      url: https://fsfe.org/
+    description: Hrvatska kampanja inicijative Free Software Foundation Europe koja zagovara da javno financirani softver bude objavljen kao otvoreni kod.
+    description_source: editorial
+    type: organization
+    language: hr
+    region: croatia
+    categories:
+      - public_education
+      - app_development
+      - open_data
+    paths:
+      - digitalno
+  - title: Code For Croatia
     url: https://codeforcroatia.org/
-  description: Zajednica dizajnera, programera i haktivista koji stvaraju digitalne
-    alate i rješenja za pozitivne društvene promjene u Hrvatskoj.
-  type: organization
-  language: hr
-  region: croatia
-  categories:
-  - app_development
-  - open_data
-  - grassroots
-  paths:
-  - digitalno
-- title: Slobodna Domena
-  url: https://slobodnadomena.hr/
-  by:
-    name: Slobodna Domena zadruga
+    by:
+      name: Code For Croatia zajednica
+      url: https://codeforcroatia.org/
+    description: Zajednica dizajnera, programera i haktivista koji stvaraju digitalne alate i rješenja za pozitivne društvene promjene u Hrvatskoj.
+    type: organization
+    language: hr
+    region: croatia
+    categories:
+      - app_development
+      - open_data
+      - grassroots
+    paths:
+      - digitalno
+  - title: Slobodna Domena
     url: https://slobodnadomena.hr/
-  description: Zadruga za otvoreni kod i dizajn koja razvija digitalna rješenja za
-    organizacije civilnog društva i javni sektor.
-  type: organization
-  language: hr
-  region: croatia
-  categories:
-  - app_development
-  - open_data
-  - cooperative
-  paths:
-  - digitalno
-- title: Popravi.to
-  url: https://popravi.to/
-  by:
-    name: mySociety / lokalna adaptacija
-    url: https://www.mysociety.org/
-  description: Platforma za prijavu i praćenje komunalnih problema na javnim površinama,
-    temeljena na FixMyStreet platformi.
-  description_source: editorial
-  type: tool
-  language: hr
-  region: croatia
-  categories:
-  - grassroots
-  - development
-  - app_development
-  paths:
-  - grad
-- title: OpenCode by SRCE
-  url: https://opencode.hr/
-  by:
-    name: SRCE - Sveučilišni računski centar
-    url: https://www.srce.unizg.hr/
-  description: Zajednička platforma za razmjenu otvorenog programskog koda akademske
-    i znanstvene zajednice Republike Hrvatske.
-  type: tool
-  language: hr
-  region: croatia
-  categories:
-  - app_development
-  - open_data
-  paths:
-  - digitalno
-- title: Handy tools for developers by SRCE
-  url: https://it-tool.opencode.hr/
-  by:
-    name: SRCE - Sveučilišni računski centar
-    url: https://www.srce.unizg.hr/
-  group: srce
-  description: Kolekcija korisnih web alata za programere dostupnih putem SRCE-ove
-    OpenCode platforme.
-  type: tool
-  language: hr
-  region: croatia
-  categories:
-  - app_development
-  paths: []
-- title: Konferencija Dani e-infrastrukture 2026
-  url: http://dei.srce.hr/
-  by:
-    name: SRCE - Sveučilišni računski centar
-    url: https://www.srce.unizg.hr/
-  group: srce
-  description: Godišnja konferencija e-infrastrukture, okupljalište korisničke zajednice
-    Srca i entuzijasta za razvoj znanosti i visokog obrazovanja.
-  type: event
-  language: hr
-  region: croatia
-  categories:
-  - public_education
-  - app_development
-  paths: []
-- title: Hoodica / Myth Code
-  url: https://myth-code.com/
-  by:
-    name: Lada Kovjanić
-  description: Sustav koji obavještava tvrtke da su ponude za upis u Poslovni registar
-    opcionalne, borba protiv obmanjujućih poslovnih praksi.
-  type: tool
-  language: hr
-  region: croatia
-  categories:
-  - app_development
-  - information
-  paths:
-  - digitalno
-- title: Zagreb Smart City
-  url: https://smart.zagreb.hr/
-  by:
-    name: Grad Zagreb
-    url: https://www.zagreb.hr/
-  group: grad_zagreb
-  description: Smart City HUB Grada Zagreba koji povezuje podatke i usluge gradskih
-    platformi, ustanova i trgovačkih društava u vlasništvu Grada.
-  type: tool
-  language: hr
-  region: zagreb
-  categories:
-  - open_data
-  - development
-  paths:
-  - grad
-- title: Grad Zagreb Geoportal
-  url: https://geoportal.zagreb.hr/
-  by:
-    name: Grad Zagreb
-    url: https://www.zagreb.hr/
-  group: grad_zagreb
-  description: Geoportal Grada Zagreba s interaktivnim kartama, prostornim podacima
-    i GIS alatima za pregled gradskog teritorija.
-  type: dataset
-  language: hr
-  region: zagreb
-  categories:
-  - open_data
-  - information
-  paths:
-  - grad
-- title: GeoHub Zagreb
-  url: https://geohub-zagreb.hub.arcgis.com/
-  by:
-    name: Grad Zagreb
-    url: https://www.zagreb.hr/
-  group: grad_zagreb
-  description: ArcGIS hub Grada Zagreba za objavu, pregled i preuzimanje prostornih
-    podataka u otvorenom formatu.
-  description_source: editorial
-  type: dataset
-  language: hr
-  region: zagreb
-  categories:
-  - open_data
-  - information
-  paths:
-  - grad
-- title: Zagreb 3D Model
-  url: https://zagreb.gdi.net/zg3d/
-  by:
-    name: GDi / Grad Zagreb
-    url: https://www.gdi.net/
-  group: grad_zagreb
-  description: Interaktivni 3D model Grada Zagreba koji prikazuje zgrade, infrastrukturu
-    i prostorni razvoj grada.
-  type: tool
-  language: hr
-  region: zagreb
-  categories:
-  - open_data
-  - information
-  paths:
-  - grad
-- title: Bajs - statistika korištenja
-  url: https://bajs.informacija.hr/
-  by:
-    name: informacija.hr
-    url: https://informacija.hr/
-  group: bajs
-  description: Analitička platforma koja prikazuje dostupnost i kretanje Bajs bicikala
-    na svim stanicama u Zagrebu kroz podatke i vizualizacije.
-  description_source: editorial
-  type: tool
-  language: hr
-  region: zagreb
-  categories:
-  - open_data
-  - information
-  - development
-  paths:
-  - okolis
-  - grad
-- title: Bajsanje - vožnja Bajsom oko Jaruna
-  url: https://bajsanje.informacija.hr/
-  by:
-    name: informacija.hr
-    url: https://informacija.hr/
-  group: bajs
-  description: Organizirani grupni izlet biciklima NextBike oko Jaruna, inicijativa
-    za promociju javnog bicikl-sharinga u gradu.
-  type: event
-  language: hr
-  region: zagreb
-  categories:
-  - grassroots
-  - sustainable_living
-  paths:
-  - okolis
-- title: Zelena Akcija
-  url: https://www.zelena-akcija.hr/hr
-  by:
-    name: Zelena Akcija
-    url: https://www.zelena-akcija.hr/
-  description: Vodeća hrvatska ekološka organizacija koja se bori za zaštitu okoliša,
-    klimatsku pravdu i održivi razvoj kroz aktivizam i zagovaranje politika.
-  type: organization
-  language: hr
-  region: croatia
-  categories:
-  - climate_action
-  - environmental_justice
-  - conservation
-  - lobbying
-  paths:
-  - okolis
-  - prava
-- title: Pametni Zeleni Telefon
-  url: https://zelena-akcija.hr/hr/vijesti/predstavljena-nova-aplikacija-pametni-zeleni-telefon
-  by:
-    name: Zelena Akcija
-    url: https://www.zelena-akcija.hr/
-  description: Mobilna aplikacija Zelene Akcije za prijavu ekoloških problema i pronalaženje
-    zelenih alternativa u svakodnevnom životu.
-  type: tool
-  language: hr
-  region: croatia
-  categories:
-  - climate_action
-  - app_development
-  - sustainable_living
-  paths:
-  - okolis
-- title: Sindikat biciklista
-  url: https://sindikatbiciklista.hr/
-  by:
-    name: Sindikat biciklista
+    by:
+      name: Slobodna Domena zadruga
+      url: https://slobodnadomena.hr/
+    description: Zadruga za otvoreni kod i dizajn koja razvija digitalna rješenja za organizacije civilnog društva i javni sektor.
+    type: organization
+    language: hr
+    region: croatia
+    categories:
+      - app_development
+      - open_data
+      - cooperative
+    paths:
+      - digitalno
+  - title: Popravi.to
+    url: https://popravi.to/
+    by:
+      name: mySociety / lokalna adaptacija
+      url: https://www.mysociety.org/
+    description: Platforma za prijavu i praćenje komunalnih problema na javnim površinama, temeljena na FixMyStreet platformi.
+    description_source: editorial
+    type: tool
+    language: hr
+    region: croatia
+    categories:
+      - grassroots
+      - development
+      - app_development
+    paths:
+      - grad
+  - title: OpenCode by SRCE
+    url: https://opencode.hr/
+    by:
+      name: SRCE - Sveučilišni računski centar
+      url: https://www.srce.unizg.hr/
+    description: Zajednička platforma za razmjenu otvorenog programskog koda akademske i znanstvene zajednice Republike Hrvatske.
+    type: tool
+    language: hr
+    region: croatia
+    categories:
+      - app_development
+      - open_data
+    paths:
+      - digitalno
+  - title: Handy tools for developers by SRCE
+    url: https://it-tool.opencode.hr/
+    by:
+      name: SRCE - Sveučilišni računski centar
+      url: https://www.srce.unizg.hr/
+    group: srce
+    description: Kolekcija korisnih web alata za programere dostupnih putem SRCE-ove OpenCode platforme.
+    type: tool
+    language: hr
+    region: croatia
+    categories:
+      - app_development
+    paths: []
+  - title: Konferencija Dani e-infrastrukture 2026
+    url: http://dei.srce.hr/
+    by:
+      name: SRCE - Sveučilišni računski centar
+      url: https://www.srce.unizg.hr/
+    group: srce
+    description: Godišnja konferencija e-infrastrukture, okupljalište korisničke zajednice Srca i entuzijasta za razvoj znanosti i visokog obrazovanja.
+    type: event
+    language: hr
+    region: croatia
+    categories:
+      - public_education
+      - app_development
+    paths: []
+  - title: Hoodica / Myth Code
+    url: https://myth-code.com/
+    by:
+      name: Lada Kovjanić
+    description: Sustav koji obavještava tvrtke da su ponude za upis u Poslovni registar opcionalne, borba protiv obmanjujućih poslovnih praksi.
+    type: tool
+    language: hr
+    region: croatia
+    categories:
+      - app_development
+      - information
+    paths:
+      - digitalno
+  - title: Zagreb Smart City
+    url: https://smart.zagreb.hr/
+    by:
+      name: Grad Zagreb
+      url: https://www.zagreb.hr/
+    group: grad_zagreb
+    description: Smart City HUB Grada Zagreba koji povezuje podatke i usluge gradskih platformi, ustanova i trgovačkih društava u vlasništvu Grada.
+    type: tool
+    language: hr
+    region: zagreb
+    categories:
+      - open_data
+      - development
+    paths:
+      - grad
+  - title: Grad Zagreb Geoportal
+    url: https://geoportal.zagreb.hr/
+    by:
+      name: Grad Zagreb
+      url: https://www.zagreb.hr/
+    group: grad_zagreb
+    description: Geoportal Grada Zagreba s interaktivnim kartama, prostornim podacima i GIS alatima za pregled gradskog teritorija.
+    type: dataset
+    language: hr
+    region: zagreb
+    categories:
+      - open_data
+      - information
+    paths:
+      - grad
+  - title: GeoHub Zagreb
+    url: https://geohub-zagreb.hub.arcgis.com/
+    by:
+      name: Grad Zagreb
+      url: https://www.zagreb.hr/
+    group: grad_zagreb
+    description: ArcGIS hub Grada Zagreba za objavu, pregled i preuzimanje prostornih podataka u otvorenom formatu.
+    description_source: editorial
+    type: dataset
+    language: hr
+    region: zagreb
+    categories:
+      - open_data
+      - information
+    paths:
+      - grad
+  - title: Zagreb 3D Model
+    url: https://zagreb.gdi.net/zg3d/
+    by:
+      name: GDi / Grad Zagreb
+      url: https://www.gdi.net/
+    group: grad_zagreb
+    description: Interaktivni 3D model Grada Zagreba koji prikazuje zgrade, infrastrukturu i prostorni razvoj grada.
+    type: tool
+    language: hr
+    region: zagreb
+    categories:
+      - open_data
+      - information
+    paths:
+      - grad
+  - title: Bajs - statistika korištenja
+    url: https://bajs.informacija.hr/
+    by:
+      name: informacija.hr
+      url: https://informacija.hr/
+    group: bajs
+    description: Analitička platforma koja prikazuje dostupnost i kretanje Bajs bicikala na svim stanicama u Zagrebu kroz podatke i vizualizacije.
+    description_source: editorial
+    type: tool
+    language: hr
+    region: zagreb
+    categories:
+      - open_data
+      - information
+      - development
+    paths:
+      - okolis
+      - grad
+  - title: Bajsanje - vožnja Bajsom oko Jaruna
+    url: https://bajsanje.informacija.hr/
+    by:
+      name: informacija.hr
+      url: https://informacija.hr/
+    group: bajs
+    description: Organizirani grupni izlet biciklima NextBike oko Jaruna, inicijativa za promociju javnog bicikl-sharinga u gradu.
+    type: event
+    language: hr
+    region: zagreb
+    categories:
+      - grassroots
+      - sustainable_living
+    paths:
+      - okolis
+  - title: Zelena Akcija
+    url: https://www.zelena-akcija.hr/hr
+    by:
+      name: Zelena Akcija
+      url: https://www.zelena-akcija.hr/
+    description: Vodeća hrvatska ekološka organizacija koja se bori za zaštitu okoliša, klimatsku pravdu i održivi razvoj kroz aktivizam i zagovaranje politika.
+    type: organization
+    language: hr
+    region: croatia
+    categories:
+      - climate_action
+      - environmental_justice
+      - conservation
+      - lobbying
+    paths:
+      - okolis
+      - prava
+  - title: Pametni Zeleni Telefon
+    url: https://zelena-akcija.hr/hr/vijesti/predstavljena-nova-aplikacija-pametni-zeleni-telefon
+    by:
+      name: Zelena Akcija
+      url: https://www.zelena-akcija.hr/
+    description: Mobilna aplikacija Zelene Akcije za prijavu ekoloških problema i pronalaženje zelenih alternativa u svakodnevnom životu.
+    type: tool
+    language: hr
+    region: croatia
+    categories:
+      - climate_action
+      - app_development
+      - sustainable_living
+    paths:
+      - okolis
+  - title: Sindikat biciklista
     url: https://sindikatbiciklista.hr/
-  description: Organizacija koja zagovara prava biciklista i razvoj biciklističke
-    infrastrukture u hrvatskim gradovima kroz aktivizam i suradnju s vlastima.
-  description_source: editorial
-  type: organization
-  language: hr
-  region: croatia
-  categories:
-  - grassroots
-  - lobbying
-  - sustainable_living
-  socials:
-    facebook: https://web.facebook.com/sindikatbiciklista
-  paths:
-  - okolis
-- title: ZET Info
-  url: https://zet-info.com/
-  by:
-    name: Neformalni autor
-  description: Neformalni portal s informacijama o rasporedu i kašnjenjima ZET-a (Zagrebački
-    električni tramvaj) u stvarnom vremenu.
-  description_source: editorial
-  type: tool
-  language: hr
-  region: zagreb
-  categories:
-  - information
-  - app_development
-  paths:
-  - grad
-- title: Nacionalna Pristupna Točka
-  url: https://www.promet-info.hr/
-  by:
-    name: Republika Hrvatska
-    url: https://gov.hr/
-  description: Digitalno sučelje za prometne podatke koje objedinjuje informacije
-    o stanju na cestama, ITS uslugama i prometnoj infrastrukturi.
-  description_source: editorial
-  type: dataset
-  language: hr
-  region: croatia
-  categories:
-  - open_data
-  - information
-  paths: []
-- title: Poslovna
-  url: https://www.poslovna.hr/
-  by:
-    name: Bisnode / Dun & Bradstreet
-  description: Najveća hrvatska baza poslovnih podataka s informacijama o svim trgovačkim
-    društvima, obrtnicima i poslovnim subjektima.
-  type: tool
-  language: hr
-  region: croatia
-  categories:
-  - open_data
-  - information
-  paths: []
-- title: North Data
-  url: https://www.northdata.com/
-  by:
-    name: North Data GmbH
+    by:
+      name: Sindikat biciklista
+      url: https://sindikatbiciklista.hr/
+    description: Organizacija koja zagovara prava biciklista i razvoj biciklističke infrastrukture u hrvatskim gradovima kroz aktivizam i suradnju s vlastima.
+    description_source: editorial
+    type: organization
+    language: hr
+    region: croatia
+    categories:
+      - grassroots
+      - lobbying
+      - sustainable_living
+    socials:
+      facebook: https://web.facebook.com/sindikatbiciklista
+    paths:
+      - okolis
+  - title: ZET Info
+    url: https://zet-info.com/
+    by:
+      name: Neformalni autor
+    description: Neformalni portal s informacijama o rasporedu i kašnjenjima ZET-a (Zagrebački električni tramvaj) u stvarnom vremenu.
+    description_source: editorial
+    type: tool
+    language: hr
+    region: zagreb
+    categories:
+      - information
+      - app_development
+    paths:
+      - grad
+  - title: Nacionalna Pristupna Točka
+    url: https://www.promet-info.hr/
+    by:
+      name: Republika Hrvatska
+      url: https://gov.hr/
+    description: Digitalno sučelje za prometne podatke koje objedinjuje informacije o stanju na cestama, ITS uslugama i prometnoj infrastrukturi.
+    description_source: editorial
+    type: dataset
+    language: hr
+    region: croatia
+    categories:
+      - open_data
+      - information
+    paths: []
+  - title: Poslovna
+    url: https://www.poslovna.hr/
+    by:
+      name: Bisnode / Dun & Bradstreet
+    description: Najveća hrvatska baza poslovnih podataka s informacijama o svim trgovačkim društvima, obrtnicima i poslovnim subjektima.
+    type: tool
+    language: hr
+    region: croatia
+    categories:
+      - open_data
+      - information
+    paths: []
+  - title: North Data
     url: https://www.northdata.com/
-  description: Europska platforma s javno dostupnim podacima o tvrtkama iz trgovačkih
-    registara, godišnjih izvještaja i financijskih registara.
-  type: tool
-  language: en
-  region: eu
-  categories:
-  - open_data
-  - information
-  paths: []
-- title: Usporedi cijene
-  url: https://usporedicijene.info/
-  by:
-    name: Neformalni autor
-  description: Platforma za pronalaženje i uspoređivanje cijena proizvoda u hrvatskim
-    trgovinama, pomaže potrošačima u donošenju odluka.
-  type: tool
-  language: hr
-  region: croatia
-  categories:
-  - ethical_consumerism
-  - information
-  paths: []
-- title: Arhium
-  url: https://arhium.hr/
-  by:
-    name: crisp.hr
-    url: https://crisp.hr/
-  description: Profesionalna platforma za automatsku analizu uvjeta gradnje za traženo
-    zemljište, namijenjena arhitektima, agentima za nekretnine i investitorima.
-  description_source: editorial
-  type: tool
-  language: hr
-  region: croatia
-  categories:
-  - open_data
-  - information
-  paths: []
-- title: Nema dima
-  url: https://nemadima.hr/
-  by:
-    name: crisp.hr
-    url: https://crisp.hr/
-  description: Interaktivna karta nepušačkih prostora u Hrvatskoj koja pomaže građanima
-    pronaći mjesta slobodna od duhanskog dima.
-  type: tool
-  language: hr
-  region: croatia
-  categories:
-  - public_health
-  - information
-  - app_development
-  paths: []
-- title: Centar za mirovne studije
-  url: https://www.cms.hr/
-  by:
-    name: Centar za mirovne studije
+    by:
+      name: North Data GmbH
+      url: https://www.northdata.com/
+    description: Europska platforma s javno dostupnim podacima o tvrtkama iz trgovačkih registara, godišnjih izvještaja i financijskih registara.
+    type: tool
+    language: en
+    region: eu
+    categories:
+      - open_data
+      - information
+    paths: []
+  - title: Usporedi cijene
+    url: https://usporedicijene.info/
+    by:
+      name: Neformalni autor
+    description: Platforma za pronalaženje i uspoređivanje cijena proizvoda u hrvatskim trgovinama, pomaže potrošačima u donošenju odluka.
+    type: tool
+    language: hr
+    region: croatia
+    categories:
+      - ethical_consumerism
+      - information
+    paths: []
+  - title: Arhium
+    url: https://arhium.hr/
+    by:
+      name: crisp.hr
+      url: https://crisp.hr/
+    description: Profesionalna platforma za automatsku analizu uvjeta gradnje za traženo zemljište, namijenjena arhitektima, agentima za nekretnine i investitorima.
+    description_source: editorial
+    type: tool
+    language: hr
+    region: croatia
+    categories:
+      - open_data
+      - information
+    paths: []
+  - title: Nema dima
+    url: https://nemadima.hr/
+    by:
+      name: crisp.hr
+      url: https://crisp.hr/
+    description: Interaktivna karta nepušačkih prostora u Hrvatskoj koja pomaže građanima pronaći mjesta slobodna od duhanskog dima.
+    type: tool
+    language: hr
+    region: croatia
+    categories:
+      - public_health
+      - information
+      - app_development
+    paths: []
+  - title: Centar za mirovne studije
     url: https://www.cms.hr/
-  description: Organizacija civilnog društva koja štiti ljudska prava i teži društvenoj
-    promjeni kroz aktivizam, obrazovanje, istraživanje i direktnu podršku marginaliziranim
-    skupinama.
-  type: organization
-  language: hr
-  region: croatia
-  categories:
-  - civil_liberties
-  - minority_rights
-  - refugee_rights
-  - public_education
-  paths:
-  - prava
-- title: EU AI Act
-  url: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
-  by:
-    name: Europska komisija
-    url: https://commission.europa.eu/
-  description: Prvo regulatorno pravno okvir na svijetu za umjetnu inteligenciju koje
-    adresira rizike AI sustava prema razini rizika.
-  description_source: editorial
-  type: information
-  language: en
-  region: eu
-  categories:
-  - policy
-  - information
-  - digital_security
-  paths:
-  - digitalno
-- title: DataReportal
-  url: https://datareportal.com/
-  by:
-    name: Kepios
-    url: https://kepios.com/
-  description: Platforma s tisućama besplatnih izvještaja i globalnih statističkih
-    podataka o korištenju interneta, društvenih mreža i digitalnih usluga.
-  description_source: editorial
-  type: dataset
-  language: en
-  region: eu
-  categories:
-  - information
-  - open_data
-  paths: []
-- title: The Internal Market Information System (IMI)
-  url: https://ec.europa.eu/internal_market/imi-net/index_en.htm
-  by:
-    name: Europska komisija
-    url: https://commission.europa.eu/
-  description: Sigurni višejezični online alat koji olakšava razmjenu informacija
-    između javnih tijela u provedbi prava EU unutarnjeg tržišta.
-  description_source: editorial
-  type: tool
-  language: en
-  region: eu
-  categories:
-  - information
-  - open_data
-  - policy
-  paths: []
-- title: Znanost u prolazu
-  url: https://znanostuprolazu.com.hr/
-  by:
-    name: Znanost u prolazu
+    by:
+      name: Centar za mirovne studije
+      url: https://www.cms.hr/
+    description: Organizacija civilnog društva koja štiti ljudska prava i teži društvenoj promjeni kroz aktivizam, obrazovanje, istraživanje i direktnu podršku marginaliziranim skupinama.
+    type: organization
+    language: hr
+    region: croatia
+    categories:
+      - civil_liberties
+      - minority_rights
+      - refugee_rights
+      - public_education
+    paths:
+      - prava
+  - title: EU AI Act
+    url: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+    by:
+      name: Europska komisija
+      url: https://commission.europa.eu/
+    description: Prvo regulatorno pravno okvir na svijetu za umjetnu inteligenciju koje adresira rizike AI sustava prema razini rizika.
+    description_source: editorial
+    type: information
+    language: en
+    region: eu
+    categories:
+      - policy
+      - information
+      - digital_security
+    paths:
+      - digitalno
+  - title: DataReportal
+    url: https://datareportal.com/
+    by:
+      name: Kepios
+      url: https://kepios.com/
+    description: Platforma s tisućama besplatnih izvještaja i globalnih statističkih podataka o korištenju interneta, društvenih mreža i digitalnih usluga.
+    description_source: editorial
+    type: dataset
+    language: en
+    region: eu
+    categories:
+      - information
+      - open_data
+    paths: []
+  - title: The Internal Market Information System (IMI)
+    url: https://ec.europa.eu/internal_market/imi-net/index_en.htm
+    by:
+      name: Europska komisija
+      url: https://commission.europa.eu/
+    description: Sigurni višejezični online alat koji olakšava razmjenu informacija između javnih tijela u provedbi prava EU unutarnjeg tržišta.
+    description_source: editorial
+    type: tool
+    language: en
+    region: eu
+    categories:
+      - information
+      - open_data
+      - policy
+    paths: []
+  - title: Znanost u prolazu
     url: https://znanostuprolazu.com.hr/
-  description: Inicijativa za promociju žena u znanosti koja ističe i podržava doprinos
-    žena u znanstvenim područjima kroz javne događaje i komunikaciju.
-  type: organization
-  language: hr
-  region: croatia
-  categories:
-  - public_education
-  - grassroots
-  - minority_rights
-  paths: []
-- title: Udruga Penkala
-  url: https://udruga-penkala.hr/
-  by:
-    name: Udruga Penkala – Znanstvena spajalica
+    by:
+      name: Znanost u prolazu
+      url: https://znanostuprolazu.com.hr/
+    description: Inicijativa za promociju žena u znanosti koja ističe i podržava doprinos žena u znanstvenim područjima kroz javne događaje i komunikaciju.
+    type: organization
+    language: hr
+    region: croatia
+    categories:
+      - public_education
+      - grassroots
+      - minority_rights
+    paths: []
+  - title: Udruga Penkala
     url: https://udruga-penkala.hr/
-  description: Udruga za popularizaciju znanosti koja djeluje kao spona između znanstvene
-    zajednice i šire javnosti kroz interaktivne projekte i edukativne aktivnosti.
-  description_source: editorial
-  type: organization
-  language: hr
-  region: croatia
-  categories:
-  - public_education
-  - grassroots
-  paths: []
+    by:
+      name: Udruga Penkala – Znanstvena spajalica
+      url: https://udruga-penkala.hr/
+    description: Udruga za popularizaciju znanosti koja djeluje kao spona između znanstvene zajednice i šire javnosti kroz interaktivne projekte i edukativne aktivnosti.
+    description_source: editorial
+    type: organization
+    language: hr
+    region: croatia
+    categories:
+      - public_education
+      - grassroots
+    paths: []

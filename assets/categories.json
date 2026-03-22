@@ -1,27 +1,152 @@
 [
-  {"id": "public_education", "nameEn": "Public education campaigns", "nameHr": "Kampanje javnog obrazovanja", "description": "Podizanje svijesti kroz dijeljenje informacija."},
-  {"id": "media_advocacy", "nameEn": "Media advocacy", "nameHr": "Medijsko zagovaranje", "description": "Korištenje medijskih kanala za promicanje ciljeva."},
-  {"id": "social_media", "nameEn": "Social media activism", "nameHr": "Aktivizam na društvenim mrežama", "description": "Online kampanje i pokreti s hashtagovima."},
-  {"id": "information", "nameEn": "Information dissemination", "nameHr": "Širenje informacija", "description": "Objavljivanje izvještaja, istraživanja i edukativnih materijala."},
-  {"id": "protests", "nameEn": "Protests and demonstrations", "nameHr": "Prosvjedi i demonstracije", "description": "Javna okupljanja za izražavanje neslaganja."},
-  {"id": "lobbying", "nameEn": "Lobbying", "nameHr": "Lobiranje", "description": "Izravno utjecanje na donositelje odluka."},
-  {"id": "voting", "nameEn": "Voting campaigns", "nameHr": "Kampanje za izlazak na izbore", "description": "Poticanje sudjelovanja na izborima."},
-  {"id": "policy", "nameEn": "Policy development", "nameHr": "Razvoj javnih politika", "description": "Stvaranje alternativnih prijedloga politika."},
-  {"id": "grassroots", "nameEn": "Grassroots organizing", "nameHr": "Organiziranje na lokalnoj razini", "description": "Izgradnja moći od razine zajednice."},
-  {"id": "coalition", "nameEn": "Coalition building", "nameHr": "Izgradnja koalicija", "description": "Formiranje saveza između organizacija."},
-  {"id": "development", "nameEn": "Community development", "nameHr": "Razvoj zajednice", "description": "Poboljšanje lokalne infrastrukture i usluga."},
-  {"id": "open_data", "nameEn": "Open data initiatives", "nameHr": "Inicijative otvorenih podataka", "description": "Činjenje informacija javno dostupnima."},
-  {"id": "digital_security", "nameEn": "Digital security training", "nameHr": "Obuka o digitalnoj sigurnosti", "description": "Zaštita aktivista na internetu."},
-  {"id": "app_development", "nameEn": "App development", "nameHr": "Razvoj aplikacija", "description": "Stvaranje alata za organiziranje."},
-  {"id": "ethical_consumerism", "nameEn": "Ethical consumerism", "nameHr": "Etičko potrošačko ponašanje", "description": "Podržavanje društveno odgovornih poduzeća."},
-  {"id": "cooperative", "nameEn": "Cooperative development", "nameHr": "Razvoj zadruga", "description": "Stvaranje alternativnih ekonomskih modela."},
-  {"id": "documentary", "nameEn": "Documentary filmmaking", "nameHr": "Dokumentarni film", "description": "Bilježenje društvenih pitanja."},
-  {"id": "conservation", "nameEn": "Conservation efforts", "nameHr": "Napori očuvanja", "description": "Zaštita prirodnih staništa i vrsta."},
-  {"id": "climate_action", "nameEn": "Climate action", "nameHr": "Klimatsko djelovanje", "description": "Borba protiv klimatskih promjena i zagovaranje održivih politika."},
-  {"id": "sustainable_living", "nameEn": "Sustainable living", "nameHr": "Održivi način života", "description": "Promicanje ekološki prihvatljivih životnih stilova."},
-  {"id": "environmental_justice", "nameEn": "Environmental justice", "nameHr": "Ekološka pravda", "description": "Borba protiv nerazmjernog utjecaja ekoloških problema na marginalizirane zajednice."},
-  {"id": "public_health", "nameEn": "Public health campaigns", "nameHr": "Kampanje javnog zdravstva", "description": "Promicanje preventivnih zdravstvenih mjera i edukacije."},
-  {"id": "civil_liberties", "nameEn": "Civil liberties defense", "nameHr": "Obrana građanskih sloboda", "description": "Zaštita osnovnih prava i sloboda od državnog zadiranja."},
-  {"id": "minority_rights", "nameEn": "Minority rights", "nameHr": "Prava manjina", "description": "Zagovaranje za prava etničkih, vjerskih i drugih manjina."},
-  {"id": "refugee_rights", "nameEn": "Refugee and migrant rights", "nameHr": "Prava izbjeglica i migranata", "description": "Zaštita prava raseljenih osoba i migranata."}
+  {
+    "id": "public_education",
+    "nameEn": "Public education campaigns",
+    "nameHr": "Kampanje javnog obrazovanja",
+    "description": "Podizanje svijesti kroz dijeljenje informacija."
+  },
+  {
+    "id": "media_advocacy",
+    "nameEn": "Media advocacy",
+    "nameHr": "Medijsko zagovaranje",
+    "description": "Korištenje medijskih kanala za promicanje ciljeva."
+  },
+  {
+    "id": "social_media",
+    "nameEn": "Social media activism",
+    "nameHr": "Aktivizam na društvenim mrežama",
+    "description": "Online kampanje i pokreti s hashtagovima."
+  },
+  {
+    "id": "information",
+    "nameEn": "Information dissemination",
+    "nameHr": "Širenje informacija",
+    "description": "Objavljivanje izvještaja, istraživanja i edukativnih materijala."
+  },
+  {
+    "id": "protests",
+    "nameEn": "Protests and demonstrations",
+    "nameHr": "Prosvjedi i demonstracije",
+    "description": "Javna okupljanja za izražavanje neslaganja."
+  },
+  {
+    "id": "lobbying",
+    "nameEn": "Lobbying",
+    "nameHr": "Lobiranje",
+    "description": "Izravno utjecanje na donositelje odluka."
+  },
+  {
+    "id": "voting",
+    "nameEn": "Voting campaigns",
+    "nameHr": "Kampanje za izlazak na izbore",
+    "description": "Poticanje sudjelovanja na izborima."
+  },
+  {
+    "id": "policy",
+    "nameEn": "Policy development",
+    "nameHr": "Razvoj javnih politika",
+    "description": "Stvaranje alternativnih prijedloga politika."
+  },
+  {
+    "id": "grassroots",
+    "nameEn": "Grassroots organizing",
+    "nameHr": "Organiziranje na lokalnoj razini",
+    "description": "Izgradnja moći od razine zajednice."
+  },
+  {
+    "id": "coalition",
+    "nameEn": "Coalition building",
+    "nameHr": "Izgradnja koalicija",
+    "description": "Formiranje saveza između organizacija."
+  },
+  {
+    "id": "development",
+    "nameEn": "Community development",
+    "nameHr": "Razvoj zajednice",
+    "description": "Poboljšanje lokalne infrastrukture i usluga."
+  },
+  {
+    "id": "open_data",
+    "nameEn": "Open data initiatives",
+    "nameHr": "Inicijative otvorenih podataka",
+    "description": "Činjenje informacija javno dostupnima."
+  },
+  {
+    "id": "digital_security",
+    "nameEn": "Digital security training",
+    "nameHr": "Obuka o digitalnoj sigurnosti",
+    "description": "Zaštita aktivista na internetu."
+  },
+  {
+    "id": "app_development",
+    "nameEn": "App development",
+    "nameHr": "Razvoj aplikacija",
+    "description": "Stvaranje alata za organiziranje."
+  },
+  {
+    "id": "ethical_consumerism",
+    "nameEn": "Ethical consumerism",
+    "nameHr": "Etičko potrošačko ponašanje",
+    "description": "Podržavanje društveno odgovornih poduzeća."
+  },
+  {
+    "id": "cooperative",
+    "nameEn": "Cooperative development",
+    "nameHr": "Razvoj zadruga",
+    "description": "Stvaranje alternativnih ekonomskih modela."
+  },
+  {
+    "id": "documentary",
+    "nameEn": "Documentary filmmaking",
+    "nameHr": "Dokumentarni film",
+    "description": "Bilježenje društvenih pitanja."
+  },
+  {
+    "id": "conservation",
+    "nameEn": "Conservation efforts",
+    "nameHr": "Napori očuvanja",
+    "description": "Zaštita prirodnih staništa i vrsta."
+  },
+  {
+    "id": "climate_action",
+    "nameEn": "Climate action",
+    "nameHr": "Klimatsko djelovanje",
+    "description": "Borba protiv klimatskih promjena i zagovaranje održivih politika."
+  },
+  {
+    "id": "sustainable_living",
+    "nameEn": "Sustainable living",
+    "nameHr": "Održivi način života",
+    "description": "Promicanje ekološki prihvatljivih životnih stilova."
+  },
+  {
+    "id": "environmental_justice",
+    "nameEn": "Environmental justice",
+    "nameHr": "Ekološka pravda",
+    "description": "Borba protiv nerazmjernog utjecaja ekoloških problema na marginalizirane zajednice."
+  },
+  {
+    "id": "public_health",
+    "nameEn": "Public health campaigns",
+    "nameHr": "Kampanje javnog zdravstva",
+    "description": "Promicanje preventivnih zdravstvenih mjera i edukacije."
+  },
+  {
+    "id": "civil_liberties",
+    "nameEn": "Civil liberties defense",
+    "nameHr": "Obrana građanskih sloboda",
+    "description": "Zaštita osnovnih prava i sloboda od državnog zadiranja."
+  },
+  {
+    "id": "minority_rights",
+    "nameEn": "Minority rights",
+    "nameHr": "Prava manjina",
+    "description": "Zagovaranje za prava etničkih, vjerskih i drugih manjina."
+  },
+  {
+    "id": "refugee_rights",
+    "nameEn": "Refugee and migrant rights",
+    "nameHr": "Prava izbjeglica i migranata",
+    "description": "Zaštita prava raseljenih osoba i migranata."
+  }
 ]

@@ -2,5 +2,10 @@
   "buildCommand": "bash build.sh",
   "outputDirectory": "build/web",
   "framework": null,
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
