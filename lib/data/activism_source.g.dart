@@ -29,6 +29,9 @@ _$ActivismSourceImpl _$$ActivismSourceImplFromJson(Map<String, dynamic> json) =>
       categories: json['categories'] == null
           ? const []
           : _categoriesFromJson(json['categories']),
+      paths:
+          (json['paths'] as List<dynamic>?)?.map((e) => e as String).toList() ??
+              const [],
       by: json['by'] == null
           ? null
           : ActivismSourceAuthor.fromJson(json['by'] as Map<String, dynamic>),
@@ -47,6 +50,7 @@ Map<String, dynamic> _$$ActivismSourceImplToJson(
       'description': instance.description,
       'url': instance.link,
       'categories': _categoriesToJson(instance.categories),
+      'paths': instance.paths,
       'by': instance.by,
       'group': instance.group,
       'type': instance.type,

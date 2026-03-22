@@ -197,6 +197,7 @@ mixin _$ActivismSource {
   String get link => throw _privateConstructorUsedError;
   @JsonKey(fromJson: _categoriesFromJson, toJson: _categoriesToJson)
   List<ActivismCategory> get categories => throw _privateConstructorUsedError;
+  List<String> get paths => throw _privateConstructorUsedError;
   ActivismSourceAuthor? get by => throw _privateConstructorUsedError;
   String? get group => throw _privateConstructorUsedError;
   String? get type => throw _privateConstructorUsedError;
@@ -227,6 +228,7 @@ abstract class $ActivismSourceCopyWith<$Res> {
       @JsonKey(name: 'url') String link,
       @JsonKey(fromJson: _categoriesFromJson, toJson: _categoriesToJson)
       List<ActivismCategory> categories,
+      List<String> paths,
       ActivismSourceAuthor? by,
       String? group,
       String? type,
@@ -257,6 +259,7 @@ class _$ActivismSourceCopyWithImpl<$Res, $Val extends ActivismSource>
     Object? description = null,
     Object? link = null,
     Object? categories = null,
+    Object? paths = null,
     Object? by = freezed,
     Object? group = freezed,
     Object? type = freezed,
@@ -285,6 +288,10 @@ class _$ActivismSourceCopyWithImpl<$Res, $Val extends ActivismSource>
           ? _value.categories
           : categories // ignore: cast_nullable_to_non_nullable
               as List<ActivismCategory>,
+      paths: null == paths
+          ? _value.paths
+          : paths // ignore: cast_nullable_to_non_nullable
+              as List<String>,
       by: freezed == by
           ? _value.by
           : by // ignore: cast_nullable_to_non_nullable
@@ -342,6 +349,7 @@ abstract class _$$ActivismSourceImplCopyWith<$Res>
       @JsonKey(name: 'url') String link,
       @JsonKey(fromJson: _categoriesFromJson, toJson: _categoriesToJson)
       List<ActivismCategory> categories,
+      List<String> paths,
       ActivismSourceAuthor? by,
       String? group,
       String? type,
@@ -371,6 +379,7 @@ class __$$ActivismSourceImplCopyWithImpl<$Res>
     Object? description = null,
     Object? link = null,
     Object? categories = null,
+    Object? paths = null,
     Object? by = freezed,
     Object? group = freezed,
     Object? type = freezed,
@@ -399,6 +408,10 @@ class __$$ActivismSourceImplCopyWithImpl<$Res>
           ? _value._categories
           : categories // ignore: cast_nullable_to_non_nullable
               as List<ActivismCategory>,
+      paths: null == paths
+          ? _value._paths
+          : paths // ignore: cast_nullable_to_non_nullable
+              as List<String>,
       by: freezed == by
           ? _value.by
           : by // ignore: cast_nullable_to_non_nullable
@@ -437,6 +450,7 @@ class _$ActivismSourceImpl implements _ActivismSource {
       @JsonKey(name: 'url') this.link = '',
       @JsonKey(fromJson: _categoriesFromJson, toJson: _categoriesToJson)
       final List<ActivismCategory> categories = const [],
+      final List<String> paths = const [],
       this.by,
       this.group,
       this.type,
@@ -444,6 +458,7 @@ class _$ActivismSourceImpl implements _ActivismSource {
       this.region,
       final Map<String, dynamic>? socials})
       : _categories = categories,
+        _paths = paths,
         _socials = socials;
 
   factory _$ActivismSourceImpl.fromJson(Map<String, dynamic> json) =>
@@ -470,6 +485,15 @@ class _$ActivismSourceImpl implements _ActivismSource {
     return EqualUnmodifiableListView(_categories);
   }
 
+  final List<String> _paths;
+  @override
+  @JsonKey()
+  List<String> get paths {
+    if (_paths is EqualUnmodifiableListView) return _paths;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_paths);
+  }
+
   @override
   final ActivismSourceAuthor? by;
   @override
@@ -492,7 +516,7 @@ class _$ActivismSourceImpl implements _ActivismSource {
 
   @override
   String toString() {
-    return 'ActivismSource(image: $image, title: $title, description: $description, link: $link, categories: $categories, by: $by, group: $group, type: $type, language: $language, region: $region, socials: $socials)';
+    return 'ActivismSource(image: $image, title: $title, description: $description, link: $link, categories: $categories, paths: $paths, by: $by, group: $group, type: $type, language: $language, region: $region, socials: $socials)';
   }
 
   @override
@@ -507,6 +531,7 @@ class _$ActivismSourceImpl implements _ActivismSource {
             (identical(other.link, link) || other.link == link) &&
             const DeepCollectionEquality()
                 .equals(other._categories, _categories) &&
+            const DeepCollectionEquality().equals(other._paths, _paths) &&
             (identical(other.by, by) || other.by == by) &&
             (identical(other.group, group) || other.group == group) &&
             (identical(other.type, type) || other.type == type) &&
@@ -525,6 +550,7 @@ class _$ActivismSourceImpl implements _ActivismSource {
       description,
       link,
       const DeepCollectionEquality().hash(_categories),
+      const DeepCollectionEquality().hash(_paths),
       by,
       group,
       type,
@@ -557,6 +583,7 @@ abstract class _ActivismSource implements ActivismSource {
       @JsonKey(name: 'url') final String link,
       @JsonKey(fromJson: _categoriesFromJson, toJson: _categoriesToJson)
       final List<ActivismCategory> categories,
+      final List<String> paths,
       final ActivismSourceAuthor? by,
       final String? group,
       final String? type,
@@ -579,6 +606,8 @@ abstract class _ActivismSource implements ActivismSource {
   @override
   @JsonKey(fromJson: _categoriesFromJson, toJson: _categoriesToJson)
   List<ActivismCategory> get categories;
+  @override
+  List<String> get paths;
   @override
   ActivismSourceAuthor? get by;
   @override

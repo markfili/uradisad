@@ -58,7 +58,7 @@ final filteredSourcesProvider = Provider<List<ActivismSource>>((ref) {
   final filter = ref.watch(filterProvider);
 
   var result = filter.selectedPath != null
-      ? allSources.where((s) => filter.selectedPath!.sourceUrls.contains(s.link)).toList()
+      ? allSources.where((s) => s.paths.contains(filter.selectedPath!.id)).toList()
       : List<ActivismSource>.from(allSources);
 
   if (filter.categories.isNotEmpty) {

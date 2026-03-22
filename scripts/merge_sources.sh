@@ -51,6 +51,7 @@ for (( i=0; i<count; i++ )); do
   language=$(yq eval ".sources[$i].language // null" $SOURCES_FILE)
   region=$(yq eval ".sources[$i].region // null" $SOURCES_FILE)
   categories=$(yq eval -o=json ".sources[$i].categories // []" $SOURCES_FILE)
+  paths=$(yq eval -o=json ".sources[$i].paths // []" $SOURCES_FILE)
   by=$(yq eval -o=json ".sources[$i].by // null" $SOURCES_FILE)
   socials=$(yq eval -o=json ".sources[$i].socials // null" $SOURCES_FILE)
 
@@ -83,6 +84,7 @@ for (( i=0; i<count; i++ )); do
     --arg image_og "$og_image_og" \
     --arg site_name "$og_site_name" \
     --argjson categories "$categories" \
+    --argjson paths "$paths" \
     --argjson by "$by" \
     --argjson socials "$socials" \
     --arg group "$group" \
@@ -97,6 +99,7 @@ for (( i=0; i<count; i++ )); do
       image_og: $image_og,
       site_name: $site_name,
       categories: $categories,
+      paths: $paths,
       by: $by,
       socials: $socials,
       group: (if $group == "null" then null else $group end),

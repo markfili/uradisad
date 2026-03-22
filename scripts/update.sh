@@ -11,6 +11,11 @@
 #
 # To refresh only descriptions (e.g. after editing sources.yaml or re-fetching OG data)
 # without rebuilding all other fields, run: ./update_descriptions.sh
+#
+# To reassign paths and categories using Claude AI, run:
+#   python3 suggest_assignments.py
+# (requires: pip install anthropic pyyaml; ANTHROPIC_API_KEY env var)
+# Then review data/sources.yaml and re-run this script.
 
 set -e
 

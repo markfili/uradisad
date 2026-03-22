@@ -31,6 +31,7 @@ class ActivismSource with _$ActivismSource {
     @Default('') String description,
     @JsonKey(name: 'url') @Default('') String link,
     @JsonKey(fromJson: _categoriesFromJson, toJson: _categoriesToJson) @Default([]) List<ActivismCategory> categories,
+    @Default([]) List<String> paths,
     ActivismSourceAuthor? by,
     String? group,
     String? type,
