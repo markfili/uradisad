@@ -12,6 +12,10 @@
       "voting",
       "lobbying"
     ],
+    "paths": [
+      "vlast",
+      "prava"
+    ],
     "by": {
       "name": "GONG - Građani organizirano nadgledaju glasanje",
       "url": "https://gong.hr/"
@@ -33,6 +37,11 @@
       "information",
       "open_data",
       "civil_liberties"
+    ],
+    "paths": [
+      "vlast",
+      "digitalno",
+      "prava"
     ],
     "by": {
       "name": "mySociety / lokalna adaptacija",
@@ -56,6 +65,9 @@
       "open_data",
       "media_advocacy"
     ],
+    "paths": [
+      "vlast"
+    ],
     "by": {
       "name": "GONG",
       "url": "https://gong.hr/"
@@ -78,6 +90,9 @@
       "open_data",
       "media_advocacy"
     ],
+    "paths": [
+      "vlast"
+    ],
     "by": {
       "name": "GONG",
       "url": "https://gong.hr/"
@@ -98,6 +113,9 @@
     "categories": [
       "information",
       "open_data"
+    ],
+    "paths": [
+      "vlast"
     ],
     "by": {
       "name": "Republika Hrvatska",
@@ -121,6 +139,10 @@
       "protests",
       "social_media"
     ],
+    "paths": [
+      "grad",
+      "prava"
+    ],
     "by": {
       "name": "Kartografija otpora",
       "url": "https://www.kartografija-otpora.org/"
@@ -142,6 +164,9 @@
       "grassroots",
       "coalition",
       "public_education"
+    ],
+    "paths": [
+      "prava"
     ],
     "by": {
       "name": "Mreža Antifašistkinja Zagreb",
@@ -167,6 +192,9 @@
       "grassroots",
       "lobbying"
     ],
+    "paths": [
+      "vlast"
+    ],
     "by": {
       "name": "GONG",
       "url": "https://gong.hr/"
@@ -189,6 +217,9 @@
       "open_data",
       "media_advocacy"
     ],
+    "paths": [
+      "vlast"
+    ],
     "by": {
       "name": "Parlametar tim",
       "url": "https://parlametar.hr/"
@@ -210,6 +241,7 @@
       "open_data",
       "information"
     ],
+    "paths": [],
     "by": {
       "name": "Republika Hrvatska",
       "url": "https://gov.hr/"
@@ -232,6 +264,9 @@
       "open_data",
       "voting"
     ],
+    "paths": [
+      "vlast"
+    ],
     "by": {
       "name": "GONG",
       "url": "https://gong.hr/"
@@ -252,6 +287,9 @@
     "categories": [
       "open_data",
       "information"
+    ],
+    "paths": [
+      "vlast"
     ],
     "by": {
       "name": "GONG",
@@ -274,6 +312,9 @@
       "information",
       "voting"
     ],
+    "paths": [
+      "vlast"
+    ],
     "by": {
       "name": "Nepoznat autor"
     },
@@ -294,6 +335,9 @@
       "media_advocacy",
       "information",
       "documentary"
+    ],
+    "paths": [
+      "vlast"
     ],
     "by": {
       "name": "Oštro - Centar za istraživačko novinarstvo",
@@ -317,6 +361,9 @@
       "app_development",
       "open_data"
     ],
+    "paths": [
+      "digitalno"
+    ],
     "by": {
       "name": "HrOpen / FSFE",
       "url": "https://fsfe.org/"
@@ -338,6 +385,9 @@
       "app_development",
       "open_data",
       "grassroots"
+    ],
+    "paths": [
+      "digitalno"
     ],
     "by": {
       "name": "Code For Croatia zajednica",
@@ -361,6 +411,9 @@
       "open_data",
       "cooperative"
     ],
+    "paths": [
+      "digitalno"
+    ],
     "by": {
       "name": "Slobodna Domena zadruga",
       "url": "https://slobodnadomena.hr/"
@@ -383,6 +436,9 @@
       "development",
       "app_development"
     ],
+    "paths": [
+      "grad"
+    ],
     "by": {
       "name": "mySociety / lokalna adaptacija",
       "url": "https://www.mysociety.org/"
@@ -404,6 +460,9 @@
       "app_development",
       "open_data"
     ],
+    "paths": [
+      "digitalno"
+    ],
     "by": {
       "name": "SRCE - Sveučilišni računski centar",
       "url": "https://www.srce.unizg.hr/"
@@ -424,6 +483,7 @@
     "categories": [
       "app_development"
     ],
+    "paths": [],
     "by": {
       "name": "SRCE - Sveučilišni računski centar",
       "url": "https://www.srce.unizg.hr/"
@@ -445,6 +505,7 @@
       "public_education",
       "app_development"
     ],
+    "paths": [],
     "by": {
       "name": "SRCE - Sveučilišni računski centar",
       "url": "https://www.srce.unizg.hr/"
@@ -466,6 +527,9 @@
       "app_development",
       "information"
     ],
+    "paths": [
+      "digitalno"
+    ],
     "by": {
       "name": "Lada Kovjanić"
     },
@@ -485,6 +549,9 @@
     "categories": [
       "open_data",
       "development"
+    ],
+    "paths": [
+      "grad"
     ],
     "by": {
       "name": "Grad Zagreb",
@@ -507,6 +574,9 @@
       "open_data",
       "information"
     ],
+    "paths": [
+      "grad"
+    ],
     "by": {
       "name": "Grad Zagreb",
       "url": "https://www.zagreb.hr/"
@@ -528,6 +598,9 @@
       "open_data",
       "information"
     ],
+    "paths": [
+      "grad"
+    ],
     "by": {
       "name": "Grad Zagreb",
       "url": "https://www.zagreb.hr/"
@@ -548,6 +621,9 @@
     "categories": [
       "open_data",
       "information"
+    ],
+    "paths": [
+      "grad"
     ],
     "by": {
       "name": "GDi / Grad Zagreb",
@@ -571,6 +647,10 @@
       "information",
       "development"
     ],
+    "paths": [
+      "okolis",
+      "grad"
+    ],
     "by": {
       "name": "informacija.hr",
       "url": "https://informacija.hr/"
@@ -591,6 +671,9 @@
     "categories": [
       "grassroots",
       "sustainable_living"
+    ],
+    "paths": [
+      "okolis"
     ],
     "by": {
       "name": "informacija.hr",
@@ -615,6 +698,10 @@
       "conservation",
       "lobbying"
     ],
+    "paths": [
+      "okolis",
+      "prava"
+    ],
     "by": {
       "name": "Zelena Akcija",
       "url": "https://www.zelena-akcija.hr/"
@@ -637,6 +724,9 @@
       "app_development",
       "sustainable_living"
     ],
+    "paths": [
+      "okolis"
+    ],
     "by": {
       "name": "Zelena Akcija",
       "url": "https://www.zelena-akcija.hr/"
@@ -658,6 +748,9 @@
       "grassroots",
       "lobbying",
       "sustainable_living"
+    ],
+    "paths": [
+      "okolis"
     ],
     "by": {
       "name": "Sindikat biciklista",
@@ -682,6 +775,9 @@
       "information",
       "app_development"
     ],
+    "paths": [
+      "grad"
+    ],
     "by": {
       "name": "Neformalni autor"
     },
@@ -702,6 +798,7 @@
       "open_data",
       "information"
     ],
+    "paths": [],
     "by": {
       "name": "Republika Hrvatska",
       "url": "https://gov.hr/"
@@ -723,6 +820,7 @@
       "open_data",
       "information"
     ],
+    "paths": [],
     "by": {
       "name": "Bisnode / Dun & Bradstreet"
     },
@@ -743,6 +841,7 @@
       "open_data",
       "information"
     ],
+    "paths": [],
     "by": {
       "name": "North Data GmbH",
       "url": "https://www.northdata.com/"
@@ -764,6 +863,7 @@
       "ethical_consumerism",
       "information"
     ],
+    "paths": [],
     "by": {
       "name": "Neformalni autor"
     },
@@ -784,6 +884,7 @@
       "open_data",
       "information"
     ],
+    "paths": [],
     "by": {
       "name": "crisp.hr",
       "url": "https://crisp.hr/"
@@ -806,6 +907,7 @@
       "information",
       "app_development"
     ],
+    "paths": [],
     "by": {
       "name": "crisp.hr",
       "url": "https://crisp.hr/"
@@ -829,6 +931,9 @@
       "refugee_rights",
       "public_education"
     ],
+    "paths": [
+      "prava"
+    ],
     "by": {
       "name": "Centar za mirovne studije",
       "url": "https://www.cms.hr/"
@@ -851,6 +956,9 @@
       "information",
       "digital_security"
     ],
+    "paths": [
+      "digitalno"
+    ],
     "by": {
       "name": "Europska komisija",
       "url": "https://commission.europa.eu/"
@@ -872,6 +980,7 @@
       "information",
       "open_data"
     ],
+    "paths": [],
     "by": {
       "name": "Kepios",
       "url": "https://kepios.com/"
@@ -894,6 +1003,7 @@
       "open_data",
       "policy"
     ],
+    "paths": [],
     "by": {
       "name": "Europska komisija",
       "url": "https://commission.europa.eu/"
@@ -916,6 +1026,7 @@
       "grassroots",
       "minority_rights"
     ],
+    "paths": [],
     "by": {
       "name": "Znanost u prolazu",
       "url": "https://znanostuprolazu.com.hr/"
@@ -937,6 +1048,7 @@
       "public_education",
       "grassroots"
     ],
+    "paths": [],
     "by": {
       "name": "Udruga Penkala – Znanstvena spajalica",
       "url": "https://udruga-penkala.hr/"
