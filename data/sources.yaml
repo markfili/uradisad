@@ -151,6 +151,7 @@ sources:
       url: https://gong.hr/
     group: predizborna_obecanja
     description: Vizualni pregled napretka u provedbi predizbornih obećanja stranaka na lokalnoj razini.
+    description_source: editorial
     type: tool
     language: hr
     region: croatia
@@ -207,6 +208,7 @@ sources:
       name: HrOpen / FSFE
       url: https://fsfe.org/
     description: Hrvatska kampanja inicijative Free Software Foundation Europe koja zagovara da javno financirani softver bude objavljen kao otvoreni kod.
+    description_source: editorial
     type: organization
     language: hr
     region: croatia
@@ -249,6 +251,7 @@ sources:
       name: mySociety / lokalna adaptacija
       url: https://www.mysociety.org/
     description: Platforma za prijavu i praćenje komunalnih problema na javnim površinama, temeljena na FixMyStreet platformi.
+    description_source: editorial
     type: tool
     language: hr
     region: croatia
@@ -346,6 +349,7 @@ sources:
       url: https://www.zagreb.hr/
     group: grad_zagreb
     description: ArcGIS hub Grada Zagreba za objavu, pregled i preuzimanje prostornih podataka u otvorenom formatu.
+    description_source: editorial
     type: dataset
     language: hr
     region: zagreb
@@ -373,7 +377,8 @@ sources:
       name: informacija.hr
       url: https://informacija.hr/
     group: bajs
-    description: Analitička platforma koja prikazuje dostupnost i kretanje NextBike bicikala na svim stanicama u Zagrebu kroz podatke i vizualizacije.
+    description: Analitička platforma koja prikazuje dostupnost i kretanje Bajs bicikala na svim stanicama u Zagrebu kroz podatke i vizualizacije.
+    description_source: editorial
     type: tool
     language: hr
     region: zagreb
@@ -433,6 +438,7 @@ sources:
       name: Sindikat biciklista
       url: https://sindikatbiciklista.hr/
     description: Organizacija koja zagovara prava biciklista i razvoj biciklističke infrastrukture u hrvatskim gradovima kroz aktivizam i suradnju s vlastima.
+    description_source: editorial
     type: organization
     language: hr
     region: croatia
@@ -448,6 +454,7 @@ sources:
     by:
       name: Neformalni autor
     description: Neformalni portal s informacijama o rasporedu i kašnjenjima ZET-a (Zagrebački električni tramvaj) u stvarnom vremenu.
+    description_source: editorial
     type: tool
     language: hr
     region: zagreb
@@ -461,6 +468,7 @@ sources:
       name: Republika Hrvatska
       url: https://gov.hr/
     description: Digitalno sučelje za prometne podatke koje objedinjuje informacije o stanju na cestama, ITS uslugama i prometnoj infrastrukturi.
+    description_source: editorial
     type: dataset
     language: hr
     region: croatia
@@ -512,7 +520,8 @@ sources:
     by:
       name: crisp.hr
       url: https://crisp.hr/
-    description: Platforma za automatsku analizu uvjeta gradnje za traženo zemljište, namijenjena arhitektima, agentima za nekretnine i investitorima.
+    description: Profesionalna platforma za automatsku analizu uvjeta gradnje za traženo zemljište, namijenjena arhitektima, agentima za nekretnine i investitorima.
+    description_source: editorial
     type: tool
     language: hr
     region: croatia
@@ -559,6 +568,7 @@ sources:
       name: Europska komisija
       url: https://commission.europa.eu/
     description: Prvo regulatorno pravno okvir na svijetu za umjetnu inteligenciju koje adresira rizike AI sustava prema razini rizika.
+    description_source: editorial
     type: information
     language: en
     region: eu
@@ -573,6 +583,7 @@ sources:
       name: Kepios
       url: https://kepios.com/
     description: Platforma s tisućama besplatnih izvještaja i globalnih statističkih podataka o korištenju interneta, društvenih mreža i digitalnih usluga.
+    description_source: editorial
     type: dataset
     language: en
     region: eu
@@ -586,6 +597,7 @@ sources:
       name: Europska komisija
       url: https://commission.europa.eu/
     description: Sigurni višejezični online alat koji olakšava razmjenu informacija između javnih tijela u provedbi prava EU unutarnjeg tržišta.
+    description_source: editorial
     type: tool
     language: en
     region: eu
@@ -616,6 +628,7 @@ sources:
       name: Udruga Penkala – Znanstvena spajalica
       url: https://udruga-penkala.hr/
     description: Udruga za popularizaciju znanosti koja djeluje kao spona između znanstvene zajednice i šire javnosti kroz interaktivne projekte i edukativne aktivnosti.
+    description_source: editorial
     type: organization
     language: hr
     region: croatia
