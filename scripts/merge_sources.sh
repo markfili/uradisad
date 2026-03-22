@@ -45,6 +45,7 @@ for (( i=0; i<count; i++ )); do
   # Read editorial fields
   title=$(yq eval ".sources[$i].title" $SOURCES_FILE)
   description=$(yq eval ".sources[$i].description // \"\"" $SOURCES_FILE)
+  description_source=$(yq eval ".sources[$i].description_source // \"\"" $SOURCES_FILE)
   group=$(yq eval ".sources[$i].group // null" $SOURCES_FILE)
   type=$(yq eval ".sources[$i].type // null" $SOURCES_FILE)
   language=$(yq eval ".sources[$i].language // null" $SOURCES_FILE)
@@ -60,10 +61,17 @@ for (( i=0; i<count; i++ )); do
   og_image_og=$(jq -r --arg url "$url" '.[$url].image_og // ""' $METADATA_FILE)
   og_site_name=$(jq -r --arg url "$url" '.[$url].site_name // ""' $METADATA_FILE)
 
-  # OG description wins; fall back to editorial
-  final_description="$og_description"
-  if [[ -z "$final_description" || "$final_description" == "null" ]]; then
+  # Resolve description: per-entry override takes precedence over global rule
+  if [[ "$description_source" == "editorial" ]]; then
     final_description="$description"
+  elif [[ "$description_source" == "og" ]]; then
+    final_description="$og_description"
+  else
+    # default: OG wins, editorial fallback
+    final_description="$og_description"
+    if [[ -z "$final_description" || "$final_description" == "null" ]]; then
+      final_description="$description"
+    fi
   fi
 
   # Build the JSON entry

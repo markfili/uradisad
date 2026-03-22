@@ -42,11 +42,19 @@ for (( i=0; i<count; i++ )); do
 
   og_description=$(jq -r --arg url "$url" '.[$url].description // ""' $METADATA_FILE)
   editorial=$(yq eval ".sources[] | select(.url == \"$url\") | .description // \"\"" $YAML_FILE)
+  description_source=$(yq eval ".sources[] | select(.url == \"$url\") | .description_source // \"\"" $YAML_FILE)
 
-  # OG wins; fall back to editorial
-  final_description="$og_description"
-  if [[ -z "$final_description" || "$final_description" == "null" ]]; then
+  # Resolve description: per-entry override takes precedence over global rule
+  if [[ "$description_source" == "editorial" ]]; then
     final_description="$editorial"
+  elif [[ "$description_source" == "og" ]]; then
+    final_description="$og_description"
+  else
+    # default: OG wins, editorial fallback
+    final_description="$og_description"
+    if [[ -z "$final_description" || "$final_description" == "null" ]]; then
+      final_description="$editorial"
+    fi
   fi
 
   result=$(echo "$result" | jq --argjson i "$i" --arg desc "$final_description" '.[$i].description = $desc')
