@@ -141,7 +141,7 @@ class _MyHomePageState extends ConsumerState<MyHomePage> {
     final notifier = ref.read(filterProvider.notifier);
     return Column(
       children: [
-        const MobileHeader(),
+        MobileHeader(onSuggest: () => _openSuggest(context)),
         const DataFreshnessBanner(),
         MobileSearchBar(
           controller: _searchCtrl,

@@ -5,7 +5,9 @@ import 'package:aktivizam/widgets/common.dart';
 import 'package:flutter/material.dart';
 
 class MobileHeader extends StatelessWidget {
-  const MobileHeader({super.key});
+  final VoidCallback onSuggest;
+
+  const MobileHeader({super.key, required this.onSuggest});
 
   @override
   Widget build(BuildContext context) {
@@ -14,10 +16,19 @@ class MobileHeader extends StatelessWidget {
       padding: EdgeInsets.only(
         top: MediaQuery.of(context).padding.top + 8,
         left: 20,
-        right: 20,
+        right: 8,
         bottom: 12,
       ),
-      child: const Logo(),
+      child: Row(
+        children: [
+          const Expanded(child: Logo()),
+          IconButton(
+            icon: const Icon(Icons.add_circle_outline, color: primaryColor),
+            tooltip: 'Predloži novi resurs',
+            onPressed: onSuggest,
+          ),
+        ],
+      ),
     );
   }
 }
