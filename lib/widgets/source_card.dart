@@ -180,6 +180,12 @@ class SourceGridCard extends StatelessWidget {
                   right: 4,
                   child: PopupMenuButton<String>(
                     icon: const Icon(Icons.more_vert, size: 18, color: Colors.white),
+                    style: ButtonStyle(
+                      backgroundColor: WidgetStateProperty.all(Colors.black.withValues(alpha: 0.35)),
+                      shape: WidgetStateProperty.all(const CircleBorder()),
+                      minimumSize: WidgetStateProperty.all(const Size(32, 32)),
+                      padding: WidgetStateProperty.all(EdgeInsets.zero),
+                    ),
                     onSelected: (value) {
                       if (value == 'suggest') _openSuggestChange(context);
                     },
