@@ -4,7 +4,10 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class SuggestSheet extends StatelessWidget {
-  const SuggestSheet({super.key});
+  final String initialUrl;
+  final String? initialSubject;
+
+  const SuggestSheet({super.key, this.initialUrl = '', this.initialSubject});
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +31,7 @@ class SuggestSheet extends StatelessWidget {
               ),
             ),
           ),
-          SuggestForm(bottomPadding: bottomPadding),
+          SuggestForm(bottomPadding: bottomPadding, initialUrl: initialUrl, initialSubject: initialSubject),
         ],
       ),
     );
@@ -36,7 +39,10 @@ class SuggestSheet extends StatelessWidget {
 }
 
 class SuggestDialog extends StatelessWidget {
-  const SuggestDialog({super.key});
+  final String initialUrl;
+  final String? initialSubject;
+
+  const SuggestDialog({super.key, this.initialUrl = '', this.initialSubject});
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +51,7 @@ class SuggestDialog extends StatelessWidget {
       clipBehavior: Clip.antiAlias,
       child: ConstrainedBox(
         constraints: const BoxConstraints(maxWidth: 480),
-        child: const SuggestForm(bottomPadding: 0),
+        child: SuggestForm(bottomPadding: 0, initialUrl: initialUrl, initialSubject: initialSubject),
       ),
     );
   }
@@ -53,8 +59,10 @@ class SuggestDialog extends StatelessWidget {
 
 class SuggestForm extends StatefulWidget {
   final double bottomPadding;
+  final String initialUrl;
+  final String? initialSubject;
 
-  const SuggestForm({super.key, this.bottomPadding = 0});
+  const SuggestForm({super.key, this.bottomPadding = 0, this.initialUrl = '', this.initialSubject});
 
   @override
   State<SuggestForm> createState() => _SuggestFormState();
@@ -64,6 +72,12 @@ class _SuggestFormState extends State<SuggestForm> {
   final _urlCtrl = TextEditingController();
   final _titleCtrl = TextEditingController();
   final _descCtrl = TextEditingController();
+
+  @override
+  void initState() {
+    super.initState();
+    _urlCtrl.text = widget.initialUrl;
+  }
 
   @override
   void dispose() {
@@ -80,7 +94,7 @@ class _SuggestFormState extends State<SuggestForm> {
     final desc = _descCtrl.text.trim();
 
     final subject = Uri.encodeComponent(
-      'Prijedlog resursa${title.isNotEmpty ? ": $title" : ""}',
+      widget.initialSubject ?? 'Prijedlog resursa${title.isNotEmpty ? ": $title" : ""}',
     );
     final bodyLines = [
       'URL: $url',

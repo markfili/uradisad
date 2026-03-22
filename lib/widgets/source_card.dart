@@ -2,6 +2,7 @@ import 'package:aktivizam/config.dart';
 import 'package:aktivizam/data/activism_source.dart';
 import 'package:aktivizam/theme.dart';
 import 'package:aktivizam/widgets/common.dart';
+import 'package:aktivizam/widgets/suggest_form.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
@@ -132,6 +133,24 @@ class SourceGridCard extends StatelessWidget {
 
   const SourceGridCard({super.key, required this.source, required this.onTap});
 
+  void _openSuggestChange(BuildContext context) {
+    final subject = 'Zahtjev za izmjenu: ${source.title}';
+    final isDesktop = MediaQuery.sizeOf(context).width >= 1024;
+    if (isDesktop) {
+      showDialog(
+        context: context,
+        builder: (_) => SuggestDialog(initialUrl: source.link, initialSubject: subject),
+      );
+    } else {
+      showModalBottomSheet(
+        context: context,
+        isScrollControlled: true,
+        backgroundColor: Colors.transparent,
+        builder: (_) => SuggestSheet(initialUrl: source.link, initialSubject: subject),
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -147,12 +166,38 @@ class SourceGridCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            ClipRRect(
-              borderRadius: const BorderRadius.vertical(top: Radius.circular(12)),
-              child: AspectRatio(
-                aspectRatio: 16 / 9,
-                child: SourceImage(source: source),
-              ),
+            Stack(
+              children: [
+                ClipRRect(
+                  borderRadius: const BorderRadius.vertical(top: Radius.circular(12)),
+                  child: AspectRatio(
+                    aspectRatio: 16 / 9,
+                    child: SourceImage(source: source),
+                  ),
+                ),
+                Positioned(
+                  top: 4,
+                  right: 4,
+                  child: PopupMenuButton<String>(
+                    icon: const Icon(Icons.more_vert, size: 18, color: Colors.white),
+                    onSelected: (value) {
+                      if (value == 'suggest') _openSuggestChange(context);
+                    },
+                    itemBuilder: (_) => [
+                      const PopupMenuItem(
+                        value: 'suggest',
+                        child: Row(
+                          children: [
+                            Icon(Icons.edit_outlined, size: 16),
+                            SizedBox(width: 8),
+                            Text('Predloži izmjenu'),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
             ),
             Padding(
               padding: const EdgeInsets.all(16),
