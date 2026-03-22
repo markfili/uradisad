@@ -26,4 +26,4 @@ echo "=== Step 3: Merge into sources.json ==="
 ./merge_sources.sh
 
 echo ""
-echo "All done. Commit assets/sources.yaml, assets/og_metadata.json, assets/screenshots/, and assets/sources.json."
+echo "All done. Commit data/sources.yaml, data/og_metadata.json, assets/screenshots/, and assets/sources.json."

@@ -15,12 +15,13 @@ for cmd in yq jq; do
   fi
 done
 
-SOURCES_FILE="sources.yaml"
-METADATA_FILE="og_metadata.json"
-OUTPUT_FILE="sources.json"
+SCRIPT_DIR="${0:A:h}"
+SOURCES_FILE="${SCRIPT_DIR}/../data/sources.yaml"
+METADATA_FILE="${SCRIPT_DIR}/../data/og_metadata.json"
+OUTPUT_FILE="${SCRIPT_DIR}/../assets/sources.json"
 
 if [[ ! -f $SOURCES_FILE ]]; then
-  echo "Error: $SOURCES_FILE not found. Run from the assets/ directory."
+  echo "Error: $SOURCES_FILE not found."
   exit 1
 fi
 

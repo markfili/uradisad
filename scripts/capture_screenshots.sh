@@ -19,9 +19,10 @@ for cmd in jq node npm md5; do
 done
 
 # Configuration
-ASSETS_DIR="$(pwd)"
-METADATA_FILE="${ASSETS_DIR}/og_metadata.json"
-OUTPUT_DIR="${ASSETS_DIR}/screenshots"
+SCRIPT_DIR="${0:A:h}"
+METADATA_FILE="${SCRIPT_DIR}/../data/og_metadata.json"
+OUTPUT_DIR="${SCRIPT_DIR}/../assets/screenshots"
+URL_MAPPING="${SCRIPT_DIR}/../data/url_mapping.txt"
 TEMP_DIR="/tmp/screenshot_script"
 VIEWPORT_WIDTH=1280
 VIEWPORT_HEIGHT=800
@@ -117,9 +118,9 @@ npm init -y > /dev/null
 npm install puppeteer > /dev/null
 
 # Create a mapping file
-echo "# URL -> Screenshot Mapping" > "${OUTPUT_DIR}/url_mapping.txt"
-echo "# Generated on $(date)" >> "${OUTPUT_DIR}/url_mapping.txt"
-echo "-----------------------------------" >> "${OUTPUT_DIR}/url_mapping.txt"
+echo "# URL -> Screenshot Mapping" > "$URL_MAPPING"
+echo "# Generated on $(date)" >> "$URL_MAPPING"
+echo "-----------------------------------" >> "$URL_MAPPING"
 
 # Extract all URLs from the JSON file (URL-keyed object format)
 echo "Reading URLs from $METADATA_FILE..."
@@ -145,7 +146,7 @@ for url in "${urls[@]}"; do
 
   # Check if screenshot was captured successfully
   if [[ -f "$filename" ]]; then
-    echo "$url -> $filename" >> "${OUTPUT_DIR}/url_mapping.txt"
+    echo "$url -> $filename" >> "$URL_MAPPING"
     echo "✅ Screenshot saved for $url"
   else
     echo "❌ Failed to capture screenshot for $url"
@@ -160,5 +161,5 @@ echo "Cleaning up temporary files..."
 rm -rf $TEMP_DIR
 
 echo "Done! Screenshots saved to $OUTPUT_DIR"
-echo "Created mapping file at ${OUTPUT_DIR}/url_mapping.txt"
+echo "Created mapping file at $URL_MAPPING"
 echo "Total screenshots: $(ls -1 $OUTPUT_DIR | grep -v "url_mapping.txt" | wc -l | tr -d ' ')"

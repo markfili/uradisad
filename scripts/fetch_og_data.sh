@@ -13,8 +13,9 @@ for cmd in yq curl jq; do
 done
 
 # Configuration
-SOURCES_FILE="sources.yaml"
-OUTPUT_FILE="og_metadata.json"
+SCRIPT_DIR="${0:A:h}"
+SOURCES_FILE="${SCRIPT_DIR}/../data/sources.yaml"
+OUTPUT_FILE="${SCRIPT_DIR}/../data/og_metadata.json"
 TEMP_DIR="/tmp/og_data"
 USER_AGENT="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
 

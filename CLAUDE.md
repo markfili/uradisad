@@ -23,28 +23,31 @@ flutter analyze
 
 ## Data Pipeline Scripts
 
-The `assets/` directory contains two shell scripts for populating app data (run from within `assets/`):
+Shell scripts live in `scripts/` and data files in `data/`. Run scripts from within `scripts/`:
 
-1. **`fetch_og_data.sh`** — Reads URLs from `sources.yaml`, fetches Open Graph metadata, and writes `og_metadata.json`. Requires: `yq`, `curl`, `jq`.
-2. **`capture_screenshots.sh`** — Reads URLs from `og_metadata.json`, captures screenshots via Puppeteer (auto-installed), and saves them to `assets/screenshots/` with MD5-hashed filenames. Requires: `jq`, `node`, `npm`, `md5`.
+```bash
+cd scripts
+bash update.sh   # full pipeline: fetch OG → screenshots → merge
+```
+
+Individual scripts:
+1. **`scripts/fetch_og_data.sh`** — Reads URLs from `data/sources.yaml`, fetches Open Graph metadata, writes `data/og_metadata.json`. Requires: `yq`, `curl`, `jq`.
+2. **`scripts/capture_screenshots.sh`** — Reads URLs from `data/og_metadata.json`, captures screenshots via Puppeteer (auto-installed), saves to `assets/screenshots/` with MD5-hashed filenames, writes `data/url_mapping.txt`. Requires: `jq`, `node`, `npm`, `md5`.
+3. **`scripts/merge_sources.sh`** — Merges `data/sources.yaml` + `data/og_metadata.json` into `assets/sources.json`. Requires: `yq`, `jq`.
 
 ## Architecture
 
 This is a single-screen Flutter app ("HR AKTIVIZAM") — a directory of Croatian civic activism organizations and resources.
 
 **Data flow:**
-- `assets/sources.yaml` — curated list of source URLs (human-edited master list)
+- `data/sources.yaml` — curated list of source URLs (human-edited master list)
+- `data/og_metadata.json` — auto-fetched Open Graph metadata cache
 - `assets/sources.json` — app data file loaded at runtime; each entry has `url`, `title`, `description`, `image` (MD5 filename), `image_og`, `site_name`, `categories` (array of category IDs)
+- `assets/categories.json` — predefined category definitions
 - `assets/screenshots/` — website screenshots named by MD5 hash of the URL
 
 **Key data models (`lib/data/`):**
-- `ActivismSource` — represents one activism resource; parsed from `sources.json`; resolves category IDs to `ActivismCategory` objects via `ActivismCategories.getCategoriesByIds()`
-- `ActivismCategory` / `ActivismCategories` — static list of ~50 predefined categories with bilingual names (`nameEn`, `nameHr`) and IDs (e.g. `"social_media"`, `"lobbying"`)
+- `ActivismSource` — represents one activism resource; fetched from GitHub at runtime (fallback: bundled `assets/sources.json`)
+- `ActivismCategory` / `ActivismCategories` — fetched from GitHub at runtime (fallback: bundled `assets/categories.json`)
 
-**UI (`lib/main.dart`):**
-- Single `StatefulWidget` (`_MyHomePageState`) loads `sources.json` in `initState` and renders a responsive grid (2 columns on mobile, 4 on wide screens ≥1024px)
-- `ExpansionTile` at the top allows filtering by category using `FilterChip` widgets; active filters are tracked in a local `List<ActivismCategory> filters`
-- Grid cards show the screenshot image (or a letter placeholder), title, description, and category chips
-- The `Metadata` class at the bottom of `main.dart` is an older model not currently used by the grid — `ActivismSource` is the active model
-
-**Adding a new source:** Add the URL to `sources.yaml`, re-run `fetch_og_data.sh` and `capture_screenshots.sh` to populate metadata/screenshots, then manually copy the entry into `sources.json` and assign appropriate category IDs.
+**Adding a new source:** Add the URL to `data/sources.yaml`, run `cd scripts && bash update.sh` to populate metadata/screenshots and regenerate `assets/sources.json`.
