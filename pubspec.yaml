@@ -67,6 +67,7 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/manifest.json
     - assets/sources.json
     - assets/categories.json
     - assets/screenshots/

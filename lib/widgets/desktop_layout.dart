@@ -2,6 +2,7 @@ import 'package:aktivizam/data/activism_path.dart';
 import 'package:aktivizam/data/activitsm_categories.dart';
 import 'package:aktivizam/theme.dart';
 import 'package:aktivizam/widgets/common.dart';
+import 'package:aktivizam/widgets/data_freshness_banner.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -94,6 +95,7 @@ class DesktopSidebar extends StatelessWidget {
               ),
             ),
           ),
+          const DataFreshnessBanner(),
         ],
       ),
     );

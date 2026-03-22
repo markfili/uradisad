@@ -103,3 +103,8 @@ done
 echo "$result" | jq '.' > $OUTPUT_FILE
 
 echo "Done! $OUTPUT_FILE written with $(jq 'length' $OUTPUT_FILE) entries."
+
+# Write manifest with current UTC timestamp
+MANIFEST_FILE="${SCRIPT_DIR}/../assets/manifest.json"
+echo "{\"generated_at\": \"$(date -u +"%Y-%m-%dT%H:%M:%SZ")\"}" > $MANIFEST_FILE
+echo "Manifest written to $MANIFEST_FILE"

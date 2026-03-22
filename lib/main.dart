@@ -1,6 +1,7 @@
 import 'package:aktivizam/data/activism_source.dart';
 import 'package:aktivizam/providers/filter_provider.dart';
 import 'package:aktivizam/theme.dart';
+import 'package:aktivizam/widgets/data_freshness_banner.dart';
 import 'package:aktivizam/widgets/desktop_layout.dart';
 import 'package:aktivizam/widgets/mobile_layout.dart';
 import 'package:aktivizam/widgets/source_card.dart';
@@ -141,6 +142,7 @@ class _MyHomePageState extends ConsumerState<MyHomePage> {
     return Column(
       children: [
         const MobileHeader(),
+        const DataFreshnessBanner(),
         MobileSearchBar(
           controller: _searchCtrl,
           onChanged: notifier.setSearchQuery,
