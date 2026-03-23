@@ -70,24 +70,10 @@ class DesktopSidebar extends StatelessWidget {
                     runSpacing: 8,
                     children: ActivismCategories.categories.map((e) {
                       final selected = filters.contains(e);
-                      return FilterChip(
-                        label: Text(e.nameHr),
+                      return PillChip(
+                        label: e.nameHr,
                         selected: selected,
-                        onSelected: (v) => onToggle(e, v),
-                        backgroundColor: chipBgColor,
-                        selectedColor: primaryColor.withValues(alpha: 0.15),
-                        checkmarkColor: primaryColor,
-                        labelStyle: TextStyle(
-                          fontSize: 13,
-                          color: selected ? primaryColor : textPrimary,
-                          fontWeight: selected ? FontWeight.w600 : FontWeight.w400,
-                        ),
-                        side: BorderSide(
-                          color: selected ? primaryColor : Colors.transparent,
-                        ),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8),
-                        ),
+                        onTap: () => onToggle(e, !selected),
                       );
                     }).toList(),
                   ),
