@@ -195,24 +195,27 @@ class LinkDetailBody extends StatelessWidget {
               Row(
                 children: [
                   Expanded(
-                    child: FilledButton.icon(
-                      onPressed: source.link.isNotEmpty
-                          ? () => launchUrl(
-                                Uri.parse(source.link),
-                                mode: LaunchMode.externalApplication,
-                              )
-                          : null,
-                      icon: const Icon(Icons.open_in_new, size: 16),
-                      label: const Text('Posjeti stranicu'),
-                      style: FilledButton.styleFrom(
-                        backgroundColor: primaryColor,
-                        padding: const EdgeInsets.symmetric(vertical: 14),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        textStyle: GoogleFonts.plusJakartaSans(
-                          fontSize: 14,
-                          fontWeight: FontWeight.w700,
+                    child: Tooltip(
+                      message: source.link,
+                      child: FilledButton.icon(
+                        onPressed: source.link.isNotEmpty
+                            ? () => launchUrl(
+                                  Uri.parse(source.link),
+                                  mode: LaunchMode.externalApplication,
+                                )
+                            : null,
+                        icon: const Icon(Icons.open_in_new, size: 16),
+                        label: const Text('Posjeti stranicu'),
+                        style: FilledButton.styleFrom(
+                          backgroundColor: primaryColor,
+                          padding: const EdgeInsets.symmetric(vertical: 14),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          textStyle: GoogleFonts.plusJakartaSans(
+                            fontSize: 14,
+                            fontWeight: FontWeight.w700,
+                          ),
                         ),
                       ),
                     ),
