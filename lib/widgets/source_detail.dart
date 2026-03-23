@@ -4,6 +4,7 @@ import 'package:aktivizam/widgets/common.dart';
 import 'package:aktivizam/widgets/source_card.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class LinkDetailSheet extends StatelessWidget {
@@ -223,7 +224,14 @@ class LinkDetailBody extends StatelessWidget {
                   ),
                   const SizedBox(width: 12),
                   OutlinedButton.icon(
-                    onPressed: () {},
+                    onPressed: source.link.isNotEmpty
+                        ? () => SharePlus.instance.share(
+                              ShareParams(
+                                title: source.title,
+                                text: '${source.title}\n${source.link}',
+                              ),
+                            )
+                        : null,
                     icon: const Icon(Icons.share_outlined, size: 16),
                     label: const Text('Dijeli'),
                     style: OutlinedButton.styleFrom(
