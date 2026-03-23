@@ -102,11 +102,6 @@ class LinkDetailBody extends StatelessWidget {
               child: Row(
                 children: [
                   IconBtn(
-                    icon: Icons.bookmark_outline,
-                    onTap: () {},
-                  ),
-                  const SizedBox(width: 8),
-                  IconBtn(
                     icon: Icons.close,
                     onTap: () => Navigator.of(context).pop(),
                   ),
