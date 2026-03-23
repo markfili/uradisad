@@ -1,9 +1,11 @@
 import 'package:aktivizam/config.dart';
 import 'package:aktivizam/data/activism_source.dart';
+import 'package:aktivizam/providers/filter_provider.dart';
 import 'package:aktivizam/theme.dart';
 import 'package:aktivizam/widgets/common.dart';
 import 'package:aktivizam/widgets/suggest_form.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 class SourceGrid extends StatelessWidget {
@@ -48,14 +50,16 @@ class SourceGrid extends StatelessWidget {
   }
 }
 
-class SourceListCard extends StatelessWidget {
+class SourceListCard extends ConsumerWidget {
   final ActivismSource source;
   final VoidCallback onTap;
 
   const SourceListCard({super.key, required this.source, required this.onTap});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final activeCategories = ref.watch(filterProvider).categories;
+    final notifier = ref.read(filterProvider.notifier);
     return Card(
       elevation: 0,
       shape: RoundedRectangleBorder(
@@ -112,7 +116,11 @@ class SourceListCard extends StatelessWidget {
                         runSpacing: 4,
                         children: source.categories
                             .take(2)
-                            .map((e) => CategoryChip(label: e.nameHr))
+                            .map((e) => CategoryChip(
+                                  label: e.nameHr,
+                                  selected: activeCategories.contains(e),
+                                  onTap: () => notifier.toggleCategory(e, !activeCategories.contains(e)),
+                                ))
                             .toList(),
                       ),
                   ],
@@ -127,13 +135,13 @@ class SourceListCard extends StatelessWidget {
   }
 }
 
-class SourceGridCard extends StatelessWidget {
+class SourceGridCard extends ConsumerWidget {
   final ActivismSource source;
   final VoidCallback onTap;
 
   const SourceGridCard({super.key, required this.source, required this.onTap});
 
-  void _openSuggestChange(BuildContext context) {
+  void _openSuggestChange(BuildContext context, WidgetRef ref) {
     final subject = 'Zahtjev za izmjenu: ${source.title}';
     final isDesktop = MediaQuery.sizeOf(context).width >= 1024;
     if (isDesktop) {
@@ -152,7 +160,9 @@ class SourceGridCard extends StatelessWidget {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final activeCategories = ref.watch(filterProvider).categories;
+    final notifier = ref.read(filterProvider.notifier);
     return Card(
       elevation: 0,
       shape: RoundedRectangleBorder(
@@ -187,7 +197,7 @@ class SourceGridCard extends StatelessWidget {
                       padding: WidgetStateProperty.all(EdgeInsets.zero),
                     ),
                     onSelected: (value) {
-                      if (value == 'suggest') _openSuggestChange(context);
+                      if (value == 'suggest') _openSuggestChange(context, ref);
                     },
                     itemBuilder: (_) => [
                       const PopupMenuItem(
@@ -234,7 +244,11 @@ class SourceGridCard extends StatelessWidget {
                       runSpacing: 6,
                       children: source.categories
                           .take(3)
-                          .map((e) => CategoryChip(label: e.nameHr))
+                          .map((e) => CategoryChip(
+                                label: e.nameHr,
+                                selected: activeCategories.contains(e),
+                                onTap: () => notifier.toggleCategory(e, !activeCategories.contains(e)),
+                              ))
                           .toList(),
                     ),
                   ],

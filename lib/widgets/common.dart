@@ -70,15 +70,17 @@ class PillChip extends StatelessWidget {
 
 class CategoryChip extends StatelessWidget {
   final String label;
+  final bool selected;
+  final VoidCallback? onTap;
 
-  const CategoryChip({super.key, required this.label});
+  const CategoryChip({super.key, required this.label, this.selected = false, this.onTap});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    final chip = Container(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
       decoration: BoxDecoration(
-        color: chipBgColor,
+        color: selected ? primaryColor.withValues(alpha: 0.12) : chipBgColor,
         borderRadius: BorderRadius.circular(6),
       ),
       child: Text(
@@ -90,5 +92,7 @@ class CategoryChip extends StatelessWidget {
         ),
       ),
     );
+    if (onTap == null) return chip;
+    return GestureDetector(onTap: onTap, child: chip);
   }
 }
