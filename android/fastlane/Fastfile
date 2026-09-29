@@ -21,13 +21,15 @@ platform :android do
     end
   end
 
+  # Release lanes also upload the listing text and release notes from
+  # fastlane/metadata; images and screenshots only go up via the metadata lane.
+
   desc "Build and upload to the internal testing track"
   lane :internal do
     build
     upload_to_play_store(
       track: "internal",
       aab: AAB_PATH,
-      skip_upload_metadata: true,
       skip_upload_images: true,
       skip_upload_screenshots: true,
     )
@@ -41,7 +43,6 @@ platform :android do
       aab: AAB_PATH,
       release_status: options[:draft] ? "draft" : (options[:rollout] ? "inProgress" : "completed"),
       rollout: options[:rollout]&.to_s,
-      skip_upload_metadata: true,
       skip_upload_images: true,
       skip_upload_screenshots: true,
     )
@@ -60,9 +61,10 @@ platform :android do
     )
   end
 
-  desc "Upload the store listing text, images and screenshots from fastlane/metadata"
-  lane :metadata do
+  desc "Upload listing text, images and screenshots. Needs a release on the track; pass version_code:N if the latest isn't found"
+  lane :metadata do |options|
     upload_to_play_store(
+      version_code: options[:version_code],
       skip_upload_aab: true,
       skip_upload_apk: true,
       skip_upload_changelogs: true,

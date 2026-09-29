@@ -62,8 +62,8 @@ cd android
 fastlane android check_access      # verify the key works
 fastlane android internal          # build + upload to internal testing
 fastlane android promote           # internal → production, no rebuild
-fastlane android production        # build + submit to production (rollout:0.2 / draft:true)
-fastlane android metadata          # push store listing from fastlane/metadata
+fastlane android production        # build + submit to production with listing text + notes (rollout:0.2 / draft:true)
+fastlane android metadata          # push listing + images; needs a release on the track (version_code:N)
 fastlane android fetch_metadata    # pull current listing into fastlane/metadata
 ```
 
