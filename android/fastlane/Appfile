@@ -1,0 +1,4 @@
+# Google Play service-account key. Kept outside the repo on purpose (the repo is public).
+# Override with PLAY_JSON_KEY=/path/to/key.json if you store it elsewhere.
+json_key_file(ENV["PLAY_JSON_KEY"] || File.expand_path("~/.config/play/aktivizam.json"))
+package_name("hr.arilus.aktivizam")

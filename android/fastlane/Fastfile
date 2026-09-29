@@ -1,0 +1,71 @@
+default_platform(:android)
+
+PROJECT_ROOT = File.expand_path("../..", __dir__)
+AAB_PATH = File.join(PROJECT_ROOT, "build/app/outputs/bundle/release/app-release.aab")
+
+platform :android do
+  desc "Check that the service-account key can reach this app on Google Play"
+  lane :check_access do
+    validate_play_store_json_key
+  end
+
+  desc "Download the current store listing into fastlane/metadata (run once, then edit and commit)"
+  lane :fetch_metadata do
+    download_from_play_store
+  end
+
+  desc "Build a signed release AAB with the FVM-pinned Flutter"
+  lane :build do
+    Dir.chdir(PROJECT_ROOT) do
+      sh("fvm", "flutter", "build", "appbundle", "--release")
+    end
+  end
+
+  desc "Build and upload to the internal testing track"
+  lane :internal do
+    build
+    upload_to_play_store(
+      track: "internal",
+      aab: AAB_PATH,
+      skip_upload_metadata: true,
+      skip_upload_images: true,
+      skip_upload_screenshots: true,
+    )
+  end
+
+  desc "Build and submit to production. Options: rollout:0.2 for a staged rollout, draft:true to only create a draft"
+  lane :production do |options|
+    build
+    upload_to_play_store(
+      track: "production",
+      aab: AAB_PATH,
+      release_status: options[:draft] ? "draft" : (options[:rollout] ? "inProgress" : "completed"),
+      rollout: options[:rollout]&.to_s,
+      skip_upload_metadata: true,
+      skip_upload_images: true,
+      skip_upload_screenshots: true,
+    )
+  end
+
+  desc "Promote the latest internal release to production without rebuilding"
+  lane :promote do
+    upload_to_play_store(
+      track: "internal",
+      track_promote_to: "production",
+      skip_upload_aab: true,
+      skip_upload_metadata: true,
+      skip_upload_images: true,
+      skip_upload_screenshots: true,
+      skip_upload_changelogs: true,
+    )
+  end
+
+  desc "Upload the store listing text, images and screenshots from fastlane/metadata"
+  lane :metadata do
+    upload_to_play_store(
+      skip_upload_aab: true,
+      skip_upload_apk: true,
+      skip_upload_changelogs: true,
+    )
+  end
+end

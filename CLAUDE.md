@@ -47,7 +47,24 @@ This is a single-screen Flutter app ("HR AKTIVIZAM") — a directory of Croatian
 - `assets/screenshots/` — website screenshots named by MD5 hash of the URL
 
 **Key data models (`lib/data/`):**
-- `ActivismSource` — represents one activism resource; fetched from GitHub at runtime (fallback: bundled `assets/sources.json`)
-- `ActivismCategory` / `ActivismCategories` — fetched from GitHub at runtime (fallback: bundled `assets/categories.json`)
+- `ActivismSource` — represents one activism resource
+- `ActivismCategory` / `ActivismCategories` — category definitions
+- `SourceRepository` — stale-while-revalidate: `loadLocal()` returns the last download cached in `shared_preferences` (or bundled `assets/*.json` on first launch / when newer), `fetchRemote()` downloads from GitHub raw and caches; `catalogProvider` emits local first, then remote
 
 **Adding a new source:** Add the URL to `data/sources.yaml`, run `cd scripts && bash update.sh` to populate metadata/screenshots and regenerate `assets/sources.json`.
+
+## Publishing (Google Play)
+
+Fastlane lives in `android/fastlane/`; run lanes from `android/`. Needs a Play service-account key at `~/.config/play/aktivizam.json` (or `PLAY_JSON_KEY=/path`); never commit it — the repo is public. Bump `version:` in `pubspec.yaml` first (Play rejects a reused version code).
+
+```bash
+cd android
+fastlane android check_access      # verify the key works
+fastlane android internal          # build + upload to internal testing
+fastlane android promote           # internal → production, no rebuild
+fastlane android production        # build + submit to production (rollout:0.2 / draft:true)
+fastlane android metadata          # push store listing from fastlane/metadata
+fastlane android fetch_metadata    # pull current listing into fastlane/metadata
+```
+
+Release signing uses `android/key.properties` (gitignored).
