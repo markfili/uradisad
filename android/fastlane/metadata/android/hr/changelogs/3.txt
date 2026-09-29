@@ -1,0 +1,4 @@
+• Popis se učitava odmah, a novi podaci osvježavaju se u pozadini
+• Jasna napomena da aplikacija nije povezana s državnim tijelima
+• Točniji podaci o izvorima državnih informacija
+• Tehnička ažuriranja
