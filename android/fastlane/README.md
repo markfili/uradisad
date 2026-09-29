@@ -69,7 +69,7 @@ Promote the latest internal release to production without rebuilding
 [bundle exec] fastlane android metadata
 ```
 
-Upload the store listing text, images and screenshots from fastlane/metadata
+Upload listing text, images and screenshots. Needs a release on the track; pass version_code:N if the latest isn't found
 
 ----
 
