@@ -21,13 +21,18 @@ class _ActivismApi implements ActivismApi {
   final ParseErrorLogger? errorLogger;
 
   @override
-  Future<DataManifest> getManifest() async {
+  Future<String> getManifest() async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
     const Map<String, dynamic>? _data = null;
-    final _options = _setStreamType<DataManifest>(
-      Options(method: 'GET', headers: _headers, extra: _extra)
+    final _options = _setStreamType<String>(
+      Options(
+        method: 'GET',
+        headers: _headers,
+        extra: _extra,
+        responseType: ResponseType.plain,
+      )
           .compose(
             _dio.options,
             '/assets/manifest.json',
@@ -36,10 +41,10 @@ class _ActivismApi implements ActivismApi {
           )
           .copyWith(baseUrl: _combineBaseUrls(_dio.options.baseUrl, baseUrl)),
     );
-    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
-    late DataManifest _value;
+    final _result = await _dio.fetch<String>(_options);
+    late String _value;
     try {
-      _value = DataManifest.fromJson(_result.data!);
+      _value = _result.data!;
     } on Object catch (e, s) {
       errorLogger?.logError(e, s, _options, response: _result);
       rethrow;
@@ -48,13 +53,18 @@ class _ActivismApi implements ActivismApi {
   }
 
   @override
-  Future<List<ActivismCategory>> getCategories() async {
+  Future<String> getCategories() async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
     const Map<String, dynamic>? _data = null;
-    final _options = _setStreamType<List<ActivismCategory>>(
-      Options(method: 'GET', headers: _headers, extra: _extra)
+    final _options = _setStreamType<String>(
+      Options(
+        method: 'GET',
+        headers: _headers,
+        extra: _extra,
+        responseType: ResponseType.plain,
+      )
           .compose(
             _dio.options,
             '/assets/categories.json',
@@ -63,14 +73,10 @@ class _ActivismApi implements ActivismApi {
           )
           .copyWith(baseUrl: _combineBaseUrls(_dio.options.baseUrl, baseUrl)),
     );
-    final _result = await _dio.fetch<List<dynamic>>(_options);
-    late List<ActivismCategory> _value;
+    final _result = await _dio.fetch<String>(_options);
+    late String _value;
     try {
-      _value = _result.data!
-          .map(
-            (dynamic i) => ActivismCategory.fromJson(i as Map<String, dynamic>),
-          )
-          .toList();
+      _value = _result.data!;
     } on Object catch (e, s) {
       errorLogger?.logError(e, s, _options, response: _result);
       rethrow;
@@ -79,13 +85,18 @@ class _ActivismApi implements ActivismApi {
   }
 
   @override
-  Future<List<ActivismSource>> getSources() async {
+  Future<String> getSources() async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
     const Map<String, dynamic>? _data = null;
-    final _options = _setStreamType<List<ActivismSource>>(
-      Options(method: 'GET', headers: _headers, extra: _extra)
+    final _options = _setStreamType<String>(
+      Options(
+        method: 'GET',
+        headers: _headers,
+        extra: _extra,
+        responseType: ResponseType.plain,
+      )
           .compose(
             _dio.options,
             '/assets/sources.json',
@@ -94,14 +105,10 @@ class _ActivismApi implements ActivismApi {
           )
           .copyWith(baseUrl: _combineBaseUrls(_dio.options.baseUrl, baseUrl)),
     );
-    final _result = await _dio.fetch<List<dynamic>>(_options);
-    late List<ActivismSource> _value;
+    final _result = await _dio.fetch<String>(_options);
+    late String _value;
     try {
-      _value = _result.data!
-          .map(
-            (dynamic i) => ActivismSource.fromJson(i as Map<String, dynamic>),
-          )
-          .toList();
+      _value = _result.data!;
     } on Object catch (e, s) {
       errorLogger?.logError(e, s, _options, response: _result);
       rethrow;
