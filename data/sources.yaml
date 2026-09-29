@@ -66,8 +66,8 @@ sources:
   - title: Povjerenstvo za odlučivanje o sukobu interesa
     url: https://www.sukobinteresa.hr/
     by:
-      name: Republika Hrvatska
-      url: https://gov.hr/
+      name: Povjerenstvo za odlučivanje o sukobu interesa
+      url: https://www.sukobinteresa.hr/
     description: Službena stranica povjerenstva koje nadzire sukob interesa dužnosnika i vodi registar njihove imovine.
     type: tool
     language: hr
@@ -143,8 +143,8 @@ sources:
   - title: Državni Portal Otvorenih Podataka
     url: https://data.gov.hr/
     by:
-      name: Republika Hrvatska
-      url: https://gov.hr/
+      name: Ministarstvo pravosuđa, uprave i digitalne transformacije
+      url: https://mpudt.gov.hr/
     description: Središnji portal za objavu i preuzimanje otvorenih podataka javnih tijela Republike Hrvatske.
     type: dataset
     language: hr
@@ -490,8 +490,8 @@ sources:
   - title: Nacionalna Pristupna Točka
     url: https://www.promet-info.hr/
     by:
-      name: Republika Hrvatska
-      url: https://gov.hr/
+      name: Ministarstvo mora, prometa i infrastrukture
+      url: https://mmpi.gov.hr/
     description: Digitalno sučelje za prometne podatke koje objedinjuje informacije o stanju na cestama, ITS uslugama i prometnoj infrastrukturi.
     description_source: editorial
     type: dataset
