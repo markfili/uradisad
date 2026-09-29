@@ -42,6 +42,7 @@ dependencies:
   json_annotation: ^4.9.0
   share_plus: ^13.3.0
   shared_preferences: ^2.5.5
+  in_app_update: ^5.0.0
 flutter_launcher_icons:
   android: true
   ios: true
@@ -83,6 +84,7 @@ flutter:
     - assets/sources.json
     - assets/categories.json
     - assets/screenshots/
+    - assets/fonts/
 # To add assets to your application, add an assets section, like this:
 # assets:
 #   - images/a_dot_burr.jpeg

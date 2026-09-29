@@ -68,3 +68,5 @@ fastlane android fetch_metadata    # pull current listing into fastlane/metadata
 ```
 
 Release signing uses `android/key.properties` (gitignored).
+
+In-app updates (`lib/widgets/app_update_gate.dart`, Android release builds only): Play's update priority decides the flow — below 4 downloads in the background and offers a restart, 4–5 blocks with Play's immediate update. Set it with `priority:N` on the `internal`/`production` lanes. Only testable on a build installed from Play (e.g. internal testing track).

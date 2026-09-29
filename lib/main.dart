@@ -1,6 +1,7 @@
 import 'package:aktivizam/data/activism_source.dart';
 import 'package:aktivizam/providers/filter_provider.dart';
 import 'package:aktivizam/theme.dart';
+import 'package:aktivizam/widgets/app_update_gate.dart';
 import 'package:aktivizam/widgets/common.dart';
 import 'package:aktivizam/widgets/data_freshness_banner.dart';
 import 'package:aktivizam/widgets/desktop_layout.dart';
@@ -8,11 +9,19 @@ import 'package:aktivizam/widgets/mobile_layout.dart';
 import 'package:aktivizam/widgets/source_card.dart';
 import 'package:aktivizam/widgets/source_detail.dart';
 import 'package:aktivizam/widgets/suggest_form.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
+  // Fonts are bundled in assets/fonts/ — never download them from Google at runtime.
+  GoogleFonts.config.allowRuntimeFetching = false;
+  LicenseRegistry.addLicense(() async* {
+    final license = await rootBundle.loadString('assets/fonts/OFL.txt');
+    yield LicenseEntryWithLineBreaks(['google_fonts'], license);
+  });
   runApp(const ProviderScope(child: MyApp()));
 }
 
@@ -31,7 +40,7 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.plusJakartaSansTextTheme(),
         useMaterial3: true,
       ),
-      home: const MyHomePage(),
+      home: const AppUpdateGate(child: MyHomePage()),
     );
   }
 }
