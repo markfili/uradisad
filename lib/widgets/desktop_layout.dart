@@ -81,6 +81,10 @@ class DesktopSidebar extends StatelessWidget {
               ),
             ),
           ),
+          const Padding(
+            padding: EdgeInsets.fromLTRB(20, 8, 20, 0),
+            child: DisclaimerNote(),
+          ),
           Padding(
             padding: const EdgeInsets.fromLTRB(20, 8, 20, 12),
             child: SizedBox(

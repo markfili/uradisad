@@ -12,27 +12,39 @@ class SourceGrid extends StatelessWidget {
   final List<ActivismSource> sources;
   final int crossAxisCount;
   final void Function(ActivismSource) onTap;
+  final Widget? header;
 
   const SourceGrid({
     super.key,
     required this.sources,
     required this.crossAxisCount,
     required this.onTap,
+    this.header,
   });
 
   @override
   Widget build(BuildContext context) {
     if (crossAxisCount == 1) {
+      final offset = header == null ? 0 : 1;
       return ListView.builder(
         padding: const EdgeInsets.all(16),
-        itemCount: sources.length,
-        itemBuilder: (context, index) => Padding(
-          padding: const EdgeInsets.only(bottom: 10),
-          child: SourceListCard(
-            source: sources[index],
-            onTap: () => onTap(sources[index]),
-          ),
-        ),
+        itemCount: sources.length + offset,
+        itemBuilder: (context, index) {
+          if (index < offset) {
+            return Padding(
+              padding: const EdgeInsets.only(bottom: 10),
+              child: header,
+            );
+          }
+          final source = sources[index - offset];
+          return Padding(
+            padding: const EdgeInsets.only(bottom: 10),
+            child: SourceListCard(
+              source: source,
+              onTap: () => onTap(source),
+            ),
+          );
+        },
       );
     }
 

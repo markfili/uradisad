@@ -1,6 +1,7 @@
 import 'package:aktivizam/data/activism_source.dart';
 import 'package:aktivizam/providers/filter_provider.dart';
 import 'package:aktivizam/theme.dart';
+import 'package:aktivizam/widgets/common.dart';
 import 'package:aktivizam/widgets/data_freshness_banner.dart';
 import 'package:aktivizam/widgets/desktop_layout.dart';
 import 'package:aktivizam/widgets/mobile_layout.dart';
@@ -162,6 +163,7 @@ class _MyHomePageState extends ConsumerState<MyHomePage> {
             sources: filtered,
             crossAxisCount: 1,
             onTap: (s) => _openDetail(context, s),
+            header: const DisclaimerNote(),
           ),
         ),
       ],

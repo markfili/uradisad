@@ -102,3 +102,34 @@ class CategoryChip extends StatelessWidget {
     );
   }
 }
+
+class DisclaimerNote extends StatelessWidget {
+  const DisclaimerNote({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: chipBgColor,
+        borderRadius: BorderRadius.circular(10),
+      ),
+      child: const Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Icon(Icons.info_outline, size: 16, color: textSecondary),
+          SizedBox(width: 8),
+          Expanded(
+            child: Text(
+              'Neovisna aplikacija — ne predstavlja Vladu RH niti bilo koje '
+              'državno tijelo. Službene informacije potražite na izvornim '
+              'stranicama pojedinog resursa.',
+              style: TextStyle(fontSize: 12, height: 1.4, color: textSecondary),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
