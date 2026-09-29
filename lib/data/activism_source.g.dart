@@ -6,22 +6,22 @@ part of 'activism_source.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$ActivismSourceAuthorImpl _$$ActivismSourceAuthorImplFromJson(
+_ActivismSourceAuthor _$ActivismSourceAuthorFromJson(
         Map<String, dynamic> json) =>
-    _$ActivismSourceAuthorImpl(
+    _ActivismSourceAuthor(
       name: json['name'] as String,
       url: json['url'] as String?,
     );
 
-Map<String, dynamic> _$$ActivismSourceAuthorImplToJson(
-        _$ActivismSourceAuthorImpl instance) =>
+Map<String, dynamic> _$ActivismSourceAuthorToJson(
+        _ActivismSourceAuthor instance) =>
     <String, dynamic>{
       'name': instance.name,
       'url': instance.url,
     };
 
-_$ActivismSourceImpl _$$ActivismSourceImplFromJson(Map<String, dynamic> json) =>
-    _$ActivismSourceImpl(
+_ActivismSource _$ActivismSourceFromJson(Map<String, dynamic> json) =>
+    _ActivismSource(
       image: json['image'] as String? ?? '',
       title: json['title'] as String? ?? '',
       description: json['description'] as String? ?? '',
@@ -42,8 +42,7 @@ _$ActivismSourceImpl _$$ActivismSourceImplFromJson(Map<String, dynamic> json) =>
       socials: json['socials'] as Map<String, dynamic>?,
     );
 
-Map<String, dynamic> _$$ActivismSourceImplToJson(
-        _$ActivismSourceImpl instance) =>
+Map<String, dynamic> _$ActivismSourceToJson(_ActivismSource instance) =>
     <String, dynamic>{
       'image': instance.image,
       'title': instance.title,

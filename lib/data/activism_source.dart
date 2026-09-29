@@ -13,7 +13,7 @@ List<String> _categoriesToJson(List<ActivismCategory> categories) =>
     categories.map((c) => c.id).toList();
 
 @freezed
-class ActivismSourceAuthor with _$ActivismSourceAuthor {
+abstract class ActivismSourceAuthor with _$ActivismSourceAuthor {
   const factory ActivismSourceAuthor({
     required String name,
     String? url,
@@ -24,7 +24,7 @@ class ActivismSourceAuthor with _$ActivismSourceAuthor {
 }
 
 @freezed
-class ActivismSource with _$ActivismSource {
+abstract class ActivismSource with _$ActivismSource {
   const factory ActivismSource({
     @Default('') String image,
     @Default('') String title,

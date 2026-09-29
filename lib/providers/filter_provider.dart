@@ -54,7 +54,7 @@ class FilterNotifier extends Notifier<FilterState> {
 final filterProvider = NotifierProvider<FilterNotifier, FilterState>(FilterNotifier.new);
 
 final filteredSourcesProvider = Provider<List<ActivismSource>>((ref) {
-  final allSources = ref.watch(sourcesProvider).valueOrNull ?? [];
+  final allSources = ref.watch(sourcesProvider).value ?? [];
   final filter = ref.watch(filterProvider);
 
   var result = filter.selectedPath != null

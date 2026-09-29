@@ -42,10 +42,10 @@ final sourcesProvider = Provider<AsyncValue<List<ActivismSource>>>((ref) {
 
 /// True when sources were loaded from the bundled assets (no internet / GitHub down).
 final isUsingFallbackProvider = Provider<bool>((ref) {
-  return ref.watch(sourcesResultProvider).valueOrNull?.isStale ?? false;
+  return ref.watch(sourcesResultProvider).value?.isStale ?? false;
 });
 
 /// Timestamp from the manifest of the data currently shown.
 final dataGeneratedAtProvider = Provider<DateTime?>((ref) {
-  return ref.watch(manifestProvider).valueOrNull?.generatedAt;
+  return ref.watch(manifestProvider).value?.generatedAt;
 });
