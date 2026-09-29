@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // coverage:ignore-file
-// ignore_for_file: type=lint
+// ignore_for_file: type=lint, type=warning, deprecated_member_use, deprecated_member_use_from_same_package
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'activism_source.dart';
@@ -9,6 +9,7 @@ part of 'activism_source.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// GENERATED CODE - DO NOT MODIFY BY HAND
 // dart format off
 T _$identity<T>(T value) => value;
 
@@ -30,20 +31,25 @@ mixin _$ActivismSourceAuthor {
 
   @override
   bool operator ==(Object other) {
+    final _this = this as ActivismSourceAuthor;
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is ActivismSourceAuthor &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.url, url) || other.url == url));
+            (identical(other.name, _this.name) || other.name == _this.name) &&
+            (identical(other.url, _this.url) || other.url == _this.url));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType, name, url);
+  int get hashCode {
+    final _this = this as ActivismSourceAuthor;
+    return Object.hash(runtimeType, _this.name, _this.url);
+  }
 
   @override
   String toString() {
-    return 'ActivismSourceAuthor(name: $name, url: $url)';
+    final _this = this as ActivismSourceAuthor;
+    return 'ActivismSourceAuthor(name: ${_this.name}, url: ${_this.url})';
   }
 }
 
@@ -72,7 +78,7 @@ class _$ActivismSourceAuthorCopyWithImpl<$Res>
     Object? name = null,
     Object? url = freezed,
   }) {
-    return _then(_self.copyWith(
+    return _then(ActivismSourceAuthor(
       name: null == name
           ? _self.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -281,7 +287,9 @@ class _ActivismSourceAuthor implements ActivismSourceAuthor {
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType, name, url);
+  int get hashCode {
+    return Object.hash(runtimeType, name, url);
+  }
 
   @override
   String toString() {
@@ -359,46 +367,56 @@ mixin _$ActivismSource {
 
   @override
   bool operator ==(Object other) {
+    final _this = this as ActivismSource;
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is ActivismSource &&
-            (identical(other.image, image) || other.image == image) &&
-            (identical(other.title, title) || other.title == title) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            (identical(other.link, link) || other.link == link) &&
+            (identical(other.image, _this.image) ||
+                other.image == _this.image) &&
+            (identical(other.title, _this.title) ||
+                other.title == _this.title) &&
+            (identical(other.description, _this.description) ||
+                other.description == _this.description) &&
+            (identical(other.link, _this.link) || other.link == _this.link) &&
             const DeepCollectionEquality()
-                .equals(other.categories, categories) &&
-            const DeepCollectionEquality().equals(other.paths, paths) &&
-            (identical(other.by, by) || other.by == by) &&
-            (identical(other.group, group) || other.group == group) &&
-            (identical(other.type, type) || other.type == type) &&
-            (identical(other.language, language) ||
-                other.language == language) &&
-            (identical(other.region, region) || other.region == region) &&
-            const DeepCollectionEquality().equals(other.socials, socials));
+                .equals(other.categories, _this.categories) &&
+            const DeepCollectionEquality().equals(other.paths, _this.paths) &&
+            (identical(other.by, _this.by) || other.by == _this.by) &&
+            (identical(other.group, _this.group) ||
+                other.group == _this.group) &&
+            (identical(other.type, _this.type) || other.type == _this.type) &&
+            (identical(other.language, _this.language) ||
+                other.language == _this.language) &&
+            (identical(other.region, _this.region) ||
+                other.region == _this.region) &&
+            const DeepCollectionEquality()
+                .equals(other.socials, _this.socials));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      image,
-      title,
-      description,
-      link,
-      const DeepCollectionEquality().hash(categories),
-      const DeepCollectionEquality().hash(paths),
-      by,
-      group,
-      type,
-      language,
-      region,
-      const DeepCollectionEquality().hash(socials));
+  int get hashCode {
+    final _this = this as ActivismSource;
+    return Object.hash(
+        runtimeType,
+        _this.image,
+        _this.title,
+        _this.description,
+        _this.link,
+        const DeepCollectionEquality().hash(_this.categories),
+        const DeepCollectionEquality().hash(_this.paths),
+        _this.by,
+        _this.group,
+        _this.type,
+        _this.language,
+        _this.region,
+        const DeepCollectionEquality().hash(_this.socials));
+  }
 
   @override
   String toString() {
-    return 'ActivismSource(image: $image, title: $title, description: $description, link: $link, categories: $categories, paths: $paths, by: $by, group: $group, type: $type, language: $language, region: $region, socials: $socials)';
+    final _this = this as ActivismSource;
+    return 'ActivismSource(image: ${_this.image}, title: ${_this.title}, description: ${_this.description}, link: ${_this.link}, categories: ${_this.categories}, paths: ${_this.paths}, by: ${_this.by}, group: ${_this.group}, type: ${_this.type}, language: ${_this.language}, region: ${_this.region}, socials: ${_this.socials})';
   }
 }
 
@@ -452,7 +470,7 @@ class _$ActivismSourceCopyWithImpl<$Res>
     Object? region = freezed,
     Object? socials = freezed,
   }) {
-    return _then(_self.copyWith(
+    return _then(ActivismSource(
       image: null == image
           ? _self.image
           : image // ignore: cast_nullable_to_non_nullable
@@ -763,14 +781,14 @@ class _ActivismSource implements ActivismSource {
       this.description = '',
       @JsonKey(name: 'url') this.link = '',
       @JsonKey(fromJson: _categoriesFromJson, toJson: _categoriesToJson)
-      final List<ActivismCategory> categories = const [],
-      final List<String> paths = const [],
+      List<ActivismCategory> categories = const [],
+      List<String> paths = const [],
       this.by,
       this.group,
       this.type,
       this.language,
       this.region,
-      final Map<String, dynamic>? socials})
+      Map<String, dynamic>? socials})
       : _categories = categories,
         _paths = paths,
         _socials = socials;
@@ -853,33 +871,35 @@ class _ActivismSource implements ActivismSource {
                 other.description == description) &&
             (identical(other.link, link) || other.link == link) &&
             const DeepCollectionEquality()
-                .equals(other._categories, _categories) &&
-            const DeepCollectionEquality().equals(other._paths, _paths) &&
+                .equals(other.categories, _categories) &&
+            const DeepCollectionEquality().equals(other.paths, _paths) &&
             (identical(other.by, by) || other.by == by) &&
             (identical(other.group, group) || other.group == group) &&
             (identical(other.type, type) || other.type == type) &&
             (identical(other.language, language) ||
                 other.language == language) &&
             (identical(other.region, region) || other.region == region) &&
-            const DeepCollectionEquality().equals(other._socials, _socials));
+            const DeepCollectionEquality().equals(other.socials, _socials));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      image,
-      title,
-      description,
-      link,
-      const DeepCollectionEquality().hash(_categories),
-      const DeepCollectionEquality().hash(_paths),
-      by,
-      group,
-      type,
-      language,
-      region,
-      const DeepCollectionEquality().hash(_socials));
+  int get hashCode {
+    return Object.hash(
+        runtimeType,
+        image,
+        title,
+        description,
+        link,
+        const DeepCollectionEquality().hash(_categories),
+        const DeepCollectionEquality().hash(_paths),
+        by,
+        group,
+        type,
+        language,
+        region,
+        const DeepCollectionEquality().hash(_socials));
+  }
 
   @override
   String toString() {
